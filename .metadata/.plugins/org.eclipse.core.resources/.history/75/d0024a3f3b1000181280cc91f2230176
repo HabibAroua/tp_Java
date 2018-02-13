@@ -1,0 +1,19 @@
+package Ex2;
+
+public class Rectangle
+{
+	private float longeur;
+	private float largeur;
+	
+	public float Perimetre()
+	{
+		return (this.largeur+this.longeur)*2;
+	}
+	
+	public float Surface()
+	{
+		return (this.largeur*this.longeur);
+	}
+
+
+}

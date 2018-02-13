@@ -1,0 +1,14 @@
+package Ex4;
+
+public class Robot 
+{
+	private int x;
+	private int y;
+	private char orientation;
+	
+	public void tourterDroit(char o)
+	{
+		this.orientation=o;
+	}
+
+}

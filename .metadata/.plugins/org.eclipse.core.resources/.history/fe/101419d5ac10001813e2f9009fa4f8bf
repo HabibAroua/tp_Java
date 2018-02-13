@@ -1,0 +1,32 @@
+package Ex5;
+
+public class Nombre
+{
+	final int valeur;
+	
+	public void incermnter()
+	{
+		this.valeur++;
+	}
+	
+	public void decremnter()
+	{
+		this.valeur--;
+	}
+	
+	public void afficher()
+	{
+		System.out.println("La valeur numérique est "+this.valeur);
+	}
+	
+	public void incremnter(int v)
+	{
+		this.valeur+=v;
+	}
+	
+	public void decremnter(int v)
+	{
+		this.valeur-=v;
+	}
+
+}

@@ -1,0 +1,17 @@
+package Ex5;
+
+public class TestNombre 
+{
+	public static void main(String[] args)
+	{
+		Nombre n =new Nombre();
+		n.incermnter();
+		n.incermnter();
+		n.afficher();
+		n.decremnter();
+		n.afficher();
+		
+
+	}
+
+}

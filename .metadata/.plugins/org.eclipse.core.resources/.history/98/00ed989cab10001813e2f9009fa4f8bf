@@ -1,0 +1,18 @@
+package Ex4;
+
+public class Main 
+{
+	public static void main(String args[])
+	{
+		Robot r=new Robot();
+		r.tourterDroit(); //W
+		r.tourterDroit(); //S
+		r.tourterDroit(); //E
+		r.avancer(3); //3 pas directement
+		r.tourterDroit(); //N
+		r.avancer(); //un pas
+		r.tourterDroit(); //W
+		r.afficher();
+	}
+
+}
