@@ -1,0 +1,22 @@
+package mainEx1;
+
+import ex1.Employer;
+
+
+public class TestEmployer
+{
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) 
+	{
+		Employer e=new Employer();
+		System.out.println(e);
+		e.setNom("Habib");
+		e.setGarde("5Etoile");
+		e.setSalire(1700);
+		System.out.println("L'affichage est "+e);
+	}
+
+}

@@ -1,0 +1,29 @@
+package mainEx1;
+import ex1.Employer;
+
+public class TestEmployer
+{
+	public static void main(String[] args) 
+	{
+		Employer e=new Employer("Habib");
+		System.out.println(e.toString());
+		//e.setNom("Habib");
+		e.setGarde("5Etoile");
+		e.setSalire(1700);
+		System.out.println("L'affichage est "+e);
+		//Question 6
+		Employer e1=new Employer("Salah");
+		Employer e2=new Employer("Salah");
+		System.out.println(e1.toString());
+		System.out.println(e2.toString());
+		
+		if(e1.comparer(e2)==true)
+		{
+			System.out.println("Sont egaux ");
+		}
+		else
+		{
+			System.out.println("Ne sont pas egaux");
+		}
+	}
+}

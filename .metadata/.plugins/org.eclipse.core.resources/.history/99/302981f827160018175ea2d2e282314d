@@ -1,0 +1,37 @@
+package ex1;
+
+public class Employer 
+{
+	private String nom;
+	private String garde;
+	private float salaire;
+    
+	
+	
+	public void setGarde(String garde)
+	{
+		this.garde=garde;
+	}
+	
+	public void setSalire(float salaire)
+	{
+		this.salaire=salaire;
+	}
+	
+	public String getGarde()
+	{
+		return this.garde;
+	}
+	
+	public float getSalire()
+	{
+		return this.salaire;
+	}
+	
+	public String getNom()
+	{
+		return this.nom;
+	}
+
+
+}
