@@ -1,0 +1,26 @@
+package ex2;
+
+public class Main
+{
+
+	public static void main(String[] args) 
+	{
+		//Pour le personne p1
+		Personne p1 = new  Personne("Mourad","Salhi","Célibatire");
+		Personne p3=new Personne("Salah","Salhi","Mariee"); //Pere
+		Personne p4=new Personne("Halima","Ben yedir","Mariee"); //Mere
+		p1.setPere(p3);
+		p1.setMere(p4);
+		
+		//Pour le personne p2
+		Personne p2 = new  Personne("Najwa","Ayari","Célibatire");
+		Personne p5=new Personne("Ahmed","Ayari","Mariee"); //Pere
+		Personne p6=new Personne("Najiba","Rafrafi","Mariee"); //Mere
+		p1.setPere(p3);
+		p1.setMere(p4);
+		
+		//
+
+	}
+
+}

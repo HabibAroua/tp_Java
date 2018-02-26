@@ -9,11 +9,13 @@ public class Personne
     private Personne pere;
     private Personne conjoint;
     
-    public Personne(String nom , String prenom , String etatCivil)
+    public Personne(String nom , String prenom , String etatCivil , Personne mere , Personne pere )
     {
     	this.nom=nom;
     	this.prenom=prenom;
     	this.etatCivil=etatCivil;
+    	this.mere=mere;
+    	this.pere=pere;
     }
     
     public void setPere(Personne pere)
@@ -50,11 +52,10 @@ public class Personne
     public void divorser()
     {
     	this.conjoint=null;
-    	this.etatCivil="Divorceé";
     }
     
     public String toString()
     {
-    	return "Le nom et prenom :"+getNomPrenom()+" etat civil :"+etatCivil+" ";
+    	return "Le nom et prenom :"+getNomPrenom()+" etat civil "+etatCivil+" ";
     }
 }

@@ -55,6 +55,6 @@ public class Personne
     
     public String toString()
     {
-    	return "Le nom et prenom :"+getNomPrenom()+" etat civil :"+etatCivil+" ";
+    	return "Le nom et prenom :"+getNomPrenom()+" etat civil "+etatCivil+" ";
     }
 }

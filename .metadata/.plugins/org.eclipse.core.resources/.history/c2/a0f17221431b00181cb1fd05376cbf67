@@ -49,7 +49,6 @@ public class Personne
     
     public void divorser()
     {
-    	this.conjoint=null;
     	this.etatCivil="Divorceé";
     }
     

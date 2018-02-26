@@ -9,7 +9,7 @@ public class Personne
     private Personne pere;
     private Personne conjoint;
     
-    public Personne(String nom , String prenom , String etatCivil)
+    public Personne(String nom , String prenom , String etatCivil  )
     {
     	this.nom=nom;
     	this.prenom=prenom;
@@ -55,6 +55,6 @@ public class Personne
     
     public String toString()
     {
-    	return "Le nom et prenom :"+getNomPrenom()+" etat civil :"+etatCivil+" ";
+    	return "Le nom et prenom :"+getNomPrenom()+" etat civil "+etatCivil+" ";
     }
 }
