@@ -38,12 +38,12 @@ public class Personne
     	return this.pere;
     }
     
-    public Personne getMere()
+    public Mere getMere()
     {
     	return this.mere;
     }
     
-    public void seMarier(Personne c)
+    public void seMarier(Conjoint c)
     {
     	conjoint=c;
     }

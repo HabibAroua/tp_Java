@@ -9,7 +9,7 @@ public class Personne
     private Personne pere;
     private Personne conjoint;
     
-    public Personne(String nom , String prenom , String etatCivil , Personne mere , Personne pere )
+    public Personne(String nom , String prenom , String etatCivil , Mere mere , Pere pere )
     {
     	this.nom=nom;
     	this.prenom=prenom;
@@ -18,12 +18,12 @@ public class Personne
     	this.pere=pere;
     }
     
-    public void setPere(Personne pere)
+    public void setPere(Pere pere)
     {
     	this.pere=pere;
     }
     
-    public void setMere(Personne mere)
+    public void setMere(Mere mere)
     {
     	this.mere=mere;
     }
@@ -33,17 +33,17 @@ public class Personne
     	return this.nom+" "+this.prenom;
     }
     
-    public Personne getPere()
+    public Pere getPere()
     {
     	return this.pere;
     }
     
-    public Personne getMere()
+    public Mere getMere()
     {
     	return this.mere;
     }
     
-    public void seMarier(Personne c)
+    public void seMarier(Conjoint c)
     {
     	conjoint=c;
     }
