@@ -32,29 +32,6 @@ public class Personne
     {
     	return this.nom+" "+this.prenom;
     }
-    
-    public Pere getPere()
-    {
-    	return this.pere;
-    }
-    
-    public Mere getMere()
-    {
-    	return this.mere;
-    }
-    
-    public void seMarier(Conjoint c)
-    {
-    	conjoint=c;
-    }
-    
-    public void divorser()
-    {
-    	this.conjoint=null;
-    }
-    
-    public String toString()
-    {
-    	return "Le nom et prenom :"+getNomPrenom()+" etat civil "+etatCivil+" ";
-    }
+
+
 }

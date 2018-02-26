@@ -53,8 +53,11 @@ public class Personne
     	this.conjoint=null;
     }
     
-    public String toString()
+    public toString()
     {
-    	return "Le nom et prenom :"+getNomPrenom()+" etat civil "+etatCivil+" ";
+    	return "Le nom et prenom :"+getNomPrenom()+" etat civil "+etatCivil" ";
     }
+ 
+
+
 }

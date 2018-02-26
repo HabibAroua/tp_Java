@@ -43,18 +43,7 @@ public class Personne
     	return this.mere;
     }
     
-    public void seMarier(Conjoint c)
-    {
-    	conjoint=c;
-    }
-    
-    public void divorser()
-    {
-    	this.conjoint=null;
-    }
-    
-    public String toString()
-    {
-    	return "Le nom et prenom :"+getNomPrenom()+" etat civil "+etatCivil+" ";
-    }
+ 
+
+
 }
