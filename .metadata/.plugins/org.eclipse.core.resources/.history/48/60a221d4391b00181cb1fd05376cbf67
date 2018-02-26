@@ -15,10 +15,8 @@ public class TestEmployer
 		Scanner sc=new Scanner(System.in);
 		System.out.println("Donner le nom de employer 1");
 		String nomE1=sc.next();
-		Employer e1=new Employer(nomE1);
-		System.out.println("Donner le nom de employer 2");
-		String nomE2=sc.next();
-		Employer e2=new Employer(nomE2);
+		Employer e1=new Employer("Salah");
+		Employer e2=new Employer("Salah");
 		System.out.println(e1.toString());
 		System.out.println(e2.toString());
 		
