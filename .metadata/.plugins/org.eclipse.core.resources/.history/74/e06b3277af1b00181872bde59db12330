@@ -1,0 +1,12 @@
+package Ex2;
+
+public class Test 
+{
+
+	public static void main(String[] args) 
+	{
+		Service s1=new Service("it",215966,new Employer("Salah","G1",50000,new Service()));
+
+	}
+
+}

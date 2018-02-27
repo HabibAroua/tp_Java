@@ -1,0 +1,22 @@
+package ex3;
+
+public class Test 
+{
+	public static void main(String[] args)
+	{
+		Auteur a1=new Auteur("Conan Doyale","Piker street");
+		Auteur a2=new Auteur("Shikisspeer","London");
+		Auteur a3=new Auteur();
+		Auteur a4=new Auteur();
+		
+		Livre l1=new Livre();
+		Livre l2=new Livre();
+		Livre l3=new Livre();
+		
+		Editeur e1=new Editeur();
+		Editeur e2=new Editeur();
+		
+		
+	}
+
+}

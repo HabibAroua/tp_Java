@@ -2,7 +2,6 @@ package ex2;
 
 public class Main
 {
-
 	public static void main(String[] args) 
 	{
 		//Pour le personne p1
@@ -31,5 +30,4 @@ public class Main
 		System.out.println(p1+" son pére est :"+p1.getPere()+" sa mére est :"+p1.getMere());
 		System.out.println(p2+" son pére est :"+p2.getPere()+" sa mére est :"+p2.getMere());
 	}
-
 }

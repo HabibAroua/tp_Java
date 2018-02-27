@@ -1,0 +1,38 @@
+package ex3;
+
+public class Editeur 
+{
+	private String nom;
+	private String adresse;
+	private Livre[]livres;
+	private static int nbLivre;
+	
+	public String getNom() 
+	{
+		return nom;
+	}
+	
+	public String getAdresse()
+	{
+		return adresse;
+	}
+	
+	public void setAdresse(String adresse) 
+	{
+		this.adresse = adresse;
+	}
+	
+	
+	public static int getNbLivre()
+	{
+		return nbLivre;
+	}
+	public String getLivre()
+	{
+		String ch="";
+		for (int i=0 ; i<getNbLivre() ; i++)
+		{
+			ch=livres[i].toString()+"\";
+		}
+	}
+}

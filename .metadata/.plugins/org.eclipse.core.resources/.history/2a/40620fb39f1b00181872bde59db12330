@@ -1,0 +1,33 @@
+package ex3;
+
+public class Livre
+{
+	private String titre;
+	private int annee;
+	private int edition;
+	private Editeur editeur;
+	private Auteur[] auteur;
+	
+	public String getTitre()
+	{
+		return this.titre;
+	}
+	
+	public int getAnnee()
+	{
+		return this.annee;
+	}
+	
+	public Editeur getEditeur()
+	{
+		return this.editeur;
+	}
+	
+	public Auteur getPremierAuteur()
+	{
+		return auteur[0];
+	}
+	
+	
+
+}

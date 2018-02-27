@@ -1,0 +1,18 @@
+package Ex2;
+
+public class Test 
+{
+
+	public static void main(String[] args) 
+	{
+		Service s1=new Service("it",215966,new Employer("Salah","G1",50000,new Service()));
+		Service s2=new Service("Al",215966,new Employer("Mohamed","G2",80000,new Service()));
+		
+		Employer e1=new Employer("Salah","G1",50000,new Service());
+		Employer e1=new Employer("Salah","G1",50000,new Service());
+		Employer e1=new Employer("Salah","G1",50000,new Service());
+		Employer e1=new Employer("Salah","G1",50000,new Service());
+
+	}
+
+}

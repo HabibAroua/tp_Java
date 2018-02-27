@@ -1,0 +1,10 @@
+package ex3;
+
+public class Auteur 
+{
+	private String nom;
+	private String adresse;
+	private Livre[] Livres;
+    private static int nbLivres;
+
+}

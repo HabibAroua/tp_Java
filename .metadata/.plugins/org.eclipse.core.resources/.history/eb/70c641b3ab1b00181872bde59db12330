@@ -1,0 +1,11 @@
+package Ex2;
+
+public class Employer
+{
+	private String nom;
+	private String garde;
+	private float salaire;
+	private Service service;
+
+
+}
