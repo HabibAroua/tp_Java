@@ -1,9 +1,0 @@
-package ex3;
-
-public class Editeur 
-{
-	private String nom;
-	private String adresse;
-	private Livre[]livres;
-
-}

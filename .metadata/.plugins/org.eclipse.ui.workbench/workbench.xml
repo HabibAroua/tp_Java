@@ -31,23 +31,13 @@
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
-<part id="1"/>
-<part id="2"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Employer.java" partName="Employer.java" path="/home/habib/workspace/ComObject/src/Ex2/Employer.java" title="Employer.java" tooltip="ComObject/src/Ex2/Employer.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ComObject/src/Ex2/Employer.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="298" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Service.java" partName="Service.java" path="/home/habib/workspace/ComObject/src/Ex2/Service.java" title="Service.java" tooltip="ComObject/src/Ex2/Service.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ComObject/src/Ex2/Service.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="38" selectionTopPixel="0"/>
-</editor>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Test.java" partName="Test.java" path="/home/habib/workspace/ComObject/src/Ex2/Test.java" title="Test.java" tooltip="ComObject/src/Ex2/Test.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ComObject/src/Ex2/Test.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="664" selectionTopPixel="0"/>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Principal.java" partName="Principal.java" path="/home/habib/workspace/Swing/src/p1/Principal.java" title="Principal.java" tooltip="Swing/src/p1/Principal.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Swing/src/p1/Principal.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="429" selectionTopPixel="15"/>
 </editor>
 </editors>
 <views>
@@ -90,8 +80,6 @@
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
-<category IMemento.internal.id="Errors"/>
-<category IMemento.internal.id="Warnings (13 items)"/>
 <category IMemento.internal.id="Warnings"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="241" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="300"/>
@@ -309,161 +297,160 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Tp2/src/ex3/Editeur.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Tp2/src/ex3/Test.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ComObject/src/Ex2/Employer.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ComObject/src/Ex2/Service.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ComObject/src/Ex2/Test.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Swing/src/p1/Principal.java"/>
 </editors>
-<item historyLabel="Editeur.java" index="0">
-<position info="not_deleted" x="799" y="0"/>
-</item>
-<item historyLabel="Editeur.java" index="0">
-<position info="not_deleted" x="735" y="0"/>
-</item>
-<item historyLabel="Editeur.java" index="0">
-<position info="not_deleted" x="795" y="0"/>
-</item>
-<item historyLabel="Editeur.java" index="0">
-<position info="not_deleted" x="9" y="0"/>
-</item>
-<item historyLabel="Test.java" index="1">
-<position info="not_deleted" x="151" y="0"/>
-</item>
-<item historyLabel="Employer.java" index="2">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="Employer.java" index="2">
-<position info="not_deleted" x="831" y="0"/>
-</item>
-<item historyLabel="Employer.java" index="2">
-<position info="not_deleted" x="115" y="7"/>
-</item>
-<item historyLabel="Service.java" index="3">
+<item historyLabel="Service.java" index="1">
 <position info="not_deleted" x="61" y="0"/>
 </item>
-<item historyLabel="Employer.java" index="2">
+<item historyLabel="Employer.java" index="0">
 <position info="not_deleted" x="832" y="0"/>
 </item>
-<item historyLabel="Service.java" index="3">
+<item historyLabel="Service.java" index="1">
 <position info="not_deleted" x="61" y="0"/>
 </item>
-<item historyLabel="Service.java" index="3">
+<item historyLabel="Service.java" index="1">
 <position info="not_deleted" x="1342" y="0"/>
 </item>
-<item historyLabel="Employer.java" index="2">
+<item historyLabel="Employer.java" index="0">
 <position info="not_deleted" x="832" y="0"/>
 </item>
-<item historyLabel="Employer.java" index="2">
+<item historyLabel="Employer.java" index="0">
 <position info="not_deleted" x="298" y="0"/>
 </item>
-<item historyLabel="Service.java" index="3">
+<item historyLabel="Service.java" index="1">
 <position info="not_deleted" x="1342" y="0"/>
 </item>
-<item historyLabel="Service.java" index="3">
+<item historyLabel="Service.java" index="1">
 <position info="not_deleted" x="967" y="0"/>
 </item>
-<item historyLabel="Service.java" index="3">
+<item historyLabel="Service.java" index="1">
 <position info="not_deleted" x="920" y="0"/>
 </item>
-<item historyLabel="Service.java" index="3">
+<item historyLabel="Service.java" index="1">
 <position info="not_deleted" x="916" y="0"/>
 </item>
-<item historyLabel="Service.java" index="3">
+<item historyLabel="Service.java" index="1">
 <position info="not_deleted" x="365" y="0"/>
 </item>
-<item historyLabel="Service.java" index="3">
+<item historyLabel="Service.java" index="1">
 <position info="not_deleted" x="360" y="0"/>
 </item>
-<item historyLabel="Service.java" index="3">
+<item historyLabel="Service.java" index="1">
 <position info="not_deleted" x="1082" y="0"/>
 </item>
-<item historyLabel="Service.java" index="3">
+<item historyLabel="Service.java" index="1">
 <position info="not_deleted" x="1219" y="0"/>
 </item>
-<item historyLabel="Service.java" index="3">
+<item historyLabel="Service.java" index="1">
 <position info="not_deleted" x="1335" y="0"/>
 </item>
-<item historyLabel="Service.java" index="3">
+<item historyLabel="Service.java" index="1">
 <position/>
 </item>
-<item historyLabel="Service.java" index="3">
+<item historyLabel="Service.java" index="1">
 <position info="not_deleted" x="38" y="0"/>
 </item>
-<item historyLabel="Test.java" index="4">
+<item historyLabel="Test.java" index="2">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="Test.java" index="4">
+<item historyLabel="Test.java" index="2">
 <position info="not_deleted" x="664" y="0"/>
 </item>
-<item historyLabel="Service.java" index="3">
+<item historyLabel="Service.java" index="1">
 <position info="not_deleted" x="38" y="0"/>
 </item>
-<item historyLabel="Test.java" index="4">
+<item historyLabel="Test.java" index="2">
 <position info="not_deleted" x="664" y="0"/>
 </item>
-<item historyLabel="Test.java" index="4">
+<item historyLabel="Test.java" index="2">
 <position info="not_deleted" x="163" y="0"/>
 </item>
-<item historyLabel="Service.java" index="3">
+<item historyLabel="Service.java" index="1">
 <position info="not_deleted" x="38" y="0"/>
 </item>
-<item historyLabel="Test.java" index="4">
+<item historyLabel="Test.java" index="2">
 <position info="not_deleted" x="163" y="0"/>
 </item>
-<item historyLabel="Service.java" index="3">
+<item historyLabel="Service.java" index="1">
 <position info="not_deleted" x="38" y="0"/>
 </item>
-<item historyLabel="Test.java" index="4">
+<item historyLabel="Test.java" index="2">
 <position info="not_deleted" x="162" y="0"/>
 </item>
-<item historyLabel="Service.java" index="3">
+<item historyLabel="Service.java" index="1">
 <position info="not_deleted" x="38" y="0"/>
 </item>
-<item historyLabel="Test.java" index="4">
+<item historyLabel="Test.java" index="2">
 <position info="not_deleted" x="162" y="0"/>
 </item>
-<item historyLabel="Service.java" index="3">
+<item historyLabel="Service.java" index="1">
 <position info="not_deleted" x="38" y="0"/>
 </item>
-<item historyLabel="Employer.java" index="2">
+<item historyLabel="Employer.java" index="0">
 <position info="not_deleted" x="298" y="0"/>
 </item>
-<item historyLabel="Test.java" index="4">
+<item historyLabel="Test.java" index="2">
 <position info="not_deleted" x="162" y="0"/>
 </item>
-<item historyLabel="Employer.java" index="2">
+<item historyLabel="Employer.java" index="0">
 <position info="not_deleted" x="298" y="0"/>
 </item>
-<item historyLabel="Test.java" index="4">
+<item historyLabel="Test.java" index="2">
 <position info="not_deleted" x="162" y="0"/>
 </item>
-<item historyLabel="Service.java" index="3">
+<item historyLabel="Service.java" index="1">
 <position info="not_deleted" x="38" y="0"/>
 </item>
-<item historyLabel="Employer.java" index="2">
+<item historyLabel="Employer.java" index="0">
 <position info="not_deleted" x="298" y="0"/>
 </item>
-<item historyLabel="Test.java" index="4">
+<item historyLabel="Test.java" index="2">
 <position info="not_deleted" x="162" y="0"/>
 </item>
-<item historyLabel="Employer.java" index="2">
+<item historyLabel="Employer.java" index="0">
 <position info="not_deleted" x="298" y="0"/>
 </item>
-<item historyLabel="Test.java" index="4">
+<item historyLabel="Test.java" index="2">
 <position info="not_deleted" x="162" y="0"/>
 </item>
-<item historyLabel="Test.java" index="4">
+<item historyLabel="Test.java" index="2">
 <position info="not_deleted" x="664" y="0"/>
 </item>
-<item historyLabel="Test.java" index="4">
+<item historyLabel="Test.java" index="2">
 <position info="not_deleted" x="577" y="0"/>
 </item>
-<item historyLabel="Test.java" index="4">
+<item historyLabel="Test.java" index="2">
 <position info="not_deleted" x="664" y="0"/>
 </item>
-<item active="true" historyLabel="Test.java" index="4">
+<item historyLabel="Test.java" index="2">
 <position info="not_deleted" x="664" y="0"/>
+</item>
+<item historyLabel="Principal.java" index="3">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Principal.java" index="3">
+<position/>
+</item>
+<item historyLabel="Principal.java" index="3">
+<position info="not_deleted" x="66" y="0"/>
+</item>
+<item historyLabel="Principal.java" index="3">
+<position info="not_deleted" x="42" y="0"/>
+</item>
+<item historyLabel="Principal.java" index="3">
+<position info="not_deleted" x="43" y="0"/>
+</item>
+<item historyLabel="Principal.java" index="3">
+<position info="not_deleted" x="41" y="0"/>
+</item>
+<item historyLabel="Principal.java" index="3">
+<position info="not_deleted" x="70" y="0"/>
+</item>
+<item active="true" historyLabel="Principal.java" index="3">
+<position info="not_deleted" x="42" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -482,6 +469,9 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Principal.java" tooltip="Swing/src/p1/Principal.java">
+<persistable path="/Swing/src/p1/Principal.java"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Test.java" tooltip="ComObject/src/Ex2/Test.java">
 <persistable path="/ComObject/src/Ex2/Test.java"/>
 </file>
@@ -523,9 +513,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TestEmploye.java" tooltip="Tp2/src/ex1/TestEmploye.java">
 <persistable path="/Tp2/src/ex1/TestEmploye.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Employer.java" tooltip="Tp2/src/ex1/Employer.java">
-<persistable path="/Tp2/src/ex1/Employer.java"/>
 </file>
 </mruList>
 </workbench>
