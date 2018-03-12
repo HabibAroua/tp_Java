@@ -24,8 +24,6 @@ public class Test
 		Livre l2=new Livre("Sharlock holmes1",1888,19850,e2,ta);
 		Livre l3=new Livre("Alf laykla w mayla",1920,1966,e2,ta);
 		
-		System.out.println(l1);
-		
 	}
 
 }
