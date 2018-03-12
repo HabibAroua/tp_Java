@@ -21,9 +21,6 @@ public class Test
 		s1.setChefService(e1);
 		s2.setChefService(e3);
 		
-		System.out.println(s1);
-		System.out.println(s2);
-		
 	
 
 	}
