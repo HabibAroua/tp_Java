@@ -1,0 +1,84 @@
+package Ex6;
+
+import java.util.ArrayList;
+public class Article 
+{
+	private int code;
+	private String titre;
+	private ArrayList<Auteur> listAuteur;
+	private ArrayList<Salle> listSalle;
+	public Article()
+	{
+		listAuteur=new ArrayList<Auteur>();
+		listSalle=new ArrayList<Salle>();
+	}
+	
+	public Article(int code , String titre)
+	{
+		this.code=code;
+		this.titre=titre;
+		listAuteur=new ArrayList<Auteur>();
+		listSalle=new ArrayList<Salle>();
+	}
+	
+	public int getCode()
+	{
+		return  this.code;
+	}
+	
+	public String getTitre()
+	{
+		return this.titre;
+	}
+	
+	public String getAllAuteur()
+	{
+		String ch="";
+		for(int i=0 ; i<listAuteur.size() ; i++)
+		{
+			ch=listAuteur.get(i).toString();
+		}
+		return ch;
+	}
+	
+	public void affecterAuteur(Auteur a)
+	{
+		boolean test=listAuteur.add(a);
+		if(test)
+		{
+			System.out.println("Insertion effectué avec succes");
+		}
+		else
+		{
+			System.out.println("Erreur au niveau de l'insertion");
+		}
+	}
+	
+	public String toString()
+	{
+		return "Le code est "+getCode()+" le le titre est "+getTitre()+" Les auteur "+getAllAuteur();
+	}
+	
+	public void affecterSalle(Salle s)
+	{
+		boolean test=listSalle.add(s);
+		if(test)
+		{
+			System.out.println("L'ajout effectué avec succes ");
+		}
+		else
+		{
+			System.out.println("Erreur au niveau de l'insertion");
+		}
+	}
+	
+	public void afficherNomSalle()
+	{
+		System.out.println("Les nom sont :");
+		System.out.println("______________");
+		for(int i=0 ; i<listSalle.size(); i++)
+		{
+			System.out.println(listSalle.get(i).getNom());
+		}
+	}
+}

@@ -1,0 +1,22 @@
+package Ex6;
+
+import java.util.ArrayList;
+public class Article 
+{
+	private int code;
+	private String titre;
+	private ArrayList<Auteur> listAuteur;
+	
+	public Article()
+	{
+		listAuteur=new ArrayList<Auteur>();
+	}
+	
+	public Article(int code , String titre)
+	{
+		
+	}
+	
+	
+
+}

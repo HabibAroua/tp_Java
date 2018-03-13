@@ -1,0 +1,52 @@
+package Ex6;
+
+import java.util.ArrayList;
+public class Article 
+{
+	private int code;
+	private String titre;
+	private ArrayList<Auteur> listAuteur;
+	
+	public Article()
+	{
+		listAuteur=new ArrayList<Auteur>();
+	}
+	
+	public Article(int code , String titre)
+	{
+		this.code=code;
+		this.titre=titre;
+		listAuteur=new ArrayList<Auteur>();
+	}
+	
+	public int getCode()
+	{
+		return  this.code;
+	}
+	
+	public String getTitre()
+	{
+		return this.titre;
+	}
+	
+	public String getAllAuteur()
+	{
+		String ch="";
+		for(int i=0 ; i<listAuteur.size() ; i++)
+		{
+			ch=listAuteur.get(i).toString();
+		}
+		return ch;
+	}
+	
+	public void affecterAuteur(Auteur a)
+	{
+		listAuteur.add(a);
+	}
+	
+	public String toString()
+	{
+		return "Le code est "+getCode()+" le le titre est "+getTitre()+" Les auteur "+getAllAuteur();
+	}
+	
+}

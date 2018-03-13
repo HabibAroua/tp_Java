@@ -1,0 +1,15 @@
+package Ex6;
+
+public class Test 
+{
+	public static void main(String args[])
+	{
+		
+		Conference conf=new Conference();
+		//Pour creer un article
+		Auteur auteur=new Auteur("Conan","Doyale","Narrateur");
+		
+	}
+
+
+}

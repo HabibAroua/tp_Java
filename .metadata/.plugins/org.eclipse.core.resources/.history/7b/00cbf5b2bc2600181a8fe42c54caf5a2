@@ -1,0 +1,16 @@
+package Ex5;
+
+public class Principal
+{
+
+	public static void main(String[] args) 
+	{
+	      Repertoire rep=new Repertoire();
+	      Contact c1=new Contact("Contact1",1);
+	      Contact c2=new Contact("Contact1",2);
+	      Contact c3=new Contact("Contact1",3);
+	      Contact c4=new Contact("Contact1",4);
+	      Contact c5=new Contact("Contact1",5);
+	}
+
+}

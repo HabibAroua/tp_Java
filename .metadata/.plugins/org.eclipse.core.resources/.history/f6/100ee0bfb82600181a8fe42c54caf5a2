@@ -1,0 +1,8 @@
+package Ex5;
+
+import java.util.ArrayList;;
+public class Repertoire 
+{
+	private ArrayList<Contact> listContact
+
+}

@@ -1,0 +1,26 @@
+package Ex5;
+
+public class Contact 
+{
+	
+	private String nom;
+	private long num;
+	
+	public Contact()
+	{
+		
+	}
+	
+	public String getNom()
+	{
+		return this.nom;
+	}
+	
+	public long getNum()
+	{
+		return this.num;
+	}
+
+
+
+}

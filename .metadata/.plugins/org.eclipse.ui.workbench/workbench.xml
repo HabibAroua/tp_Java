@@ -33,21 +33,31 @@
 <part id="0"/>
 <part id="1"/>
 <part id="2"/>
+<part id="3"/>
+<part id="4"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Test.java" partName="Test.java" path="/home/habib/workspace/ComObject/src/ex3/Test.java" title="Test.java" tooltip="ComObject/src/ex3/Test.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ComObject/src/ex3/Test.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="630" selectionTopPixel="0"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Article.java" partName="Article.java" path="/home/habib/workspace/ComObject/src/Ex6/Article.java" title="Article.java" tooltip="ComObject/src/Ex6/Article.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ComObject/src/Ex6/Article.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="185" selectionTopPixel="0"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Livre.java" partName="Livre.java" path="/home/habib/workspace/ComObject/src/ex3/Livre.java" title="Livre.java" tooltip="ComObject/src/ex3/Livre.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ComObject/src/ex3/Livre.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="266" selectionTopPixel="0"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Salle.java" partName="Salle.java" path="/home/habib/workspace/ComObject/src/Ex6/Salle.java" title="Salle.java" tooltip="ComObject/src/Ex6/Salle.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ComObject/src/Ex6/Salle.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="501" selectionTopPixel="193"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Test.java" partName="Test.java" path="/home/habib/workspace/ComObject/src/Ex2/Test.java" title="Test.java" tooltip="ComObject/src/Ex2/Test.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ComObject/src/Ex2/Test.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Conference.java" partName="Conference.java" path="/home/habib/workspace/ComObject/src/Ex6/Conference.java" title="Conference.java" tooltip="ComObject/src/Ex6/Conference.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ComObject/src/Ex6/Conference.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Auteur.java" partName="Auteur.java" path="/home/habib/workspace/ComObject/src/Ex6/Auteur.java" title="Auteur.java" tooltip="ComObject/src/Ex6/Auteur.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ComObject/src/Ex6/Auteur.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="562" selectionTopPixel="118"/>
+</editor>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Test.java" partName="Test.java" path="/home/habib/workspace/ComObject/src/Ex6/Test.java" title="Test.java" tooltip="ComObject/src/Ex6/Test.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ComObject/src/Ex6/Test.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="696" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
@@ -91,8 +101,10 @@
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
 <category IMemento.internal.id="Errors"/>
+<category IMemento.internal.id="Warnings (22 items)"/>
+<category IMemento.internal.id="Warnings"/>
 </expanded>
-<columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="241" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="300"/>
+<columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="387" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="300"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.pathField"/>
@@ -103,7 +115,9 @@
 <view id="org.eclipse.ui.console.ConsoleView" partName="Console">
 <viewState/>
 </view>
-<view id="org.eclipse.jdt.ui.SourceView" partName="Declaration"/>
+<view id="org.eclipse.jdt.ui.SourceView" partName="Declaration">
+<viewState/>
+</view>
 <view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
 <viewState/>
 </view>
@@ -273,7 +287,7 @@
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.09645132" ratioLeft="106" ratioRight="993" relationship="2" relative="left"/>
-<info folder="true" part="bottom" ratio="0.75" ratioLeft="483" ratioRight="161" relationship="4" relative="org.eclipse.ui.editorss">
+<info folder="true" part="bottom" ratio="0.7933884" ratioLeft="480" ratioRight="125" relationship="4" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.jdt.ui.JavadocView" label="Javadoc"/>
@@ -307,163 +321,161 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ComObject/src/Ex2/Employer.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ComObject/src/Ex2/Service.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ComObject/src/Ex2/Test.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Swing/src/p1/Principal.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ComObject/src/ex3/Test.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ComObject/src/ex3/Livre.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ComObject/src/Ex2/Test.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ComObject/src/Ex6/Salle.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ComObject/src/Ex6/Conference.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ComObject/src/Ex6/Article.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ComObject/src/Ex6/Auteur.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ComObject/src/Ex6/Test.java"/>
 </editors>
-<item historyLabel="Service.java" index="1">
-<position info="not_deleted" x="365" y="0"/>
+<item historyLabel="Conference.java" index="1">
+<position info="not_deleted" x="4" y="0"/>
 </item>
-<item historyLabel="Service.java" index="1">
-<position info="not_deleted" x="360" y="0"/>
+<item historyLabel="Auteur.java" index="3">
+<position info="not_deleted" x="562" y="0"/>
 </item>
-<item historyLabel="Service.java" index="1">
-<position info="not_deleted" x="1082" y="0"/>
+<item historyLabel="Conference.java" index="1">
+<position info="not_deleted" x="4" y="0"/>
 </item>
-<item historyLabel="Service.java" index="1">
-<position info="not_deleted" x="1219" y="0"/>
+<item historyLabel="Salle.java" index="0">
+<position info="not_deleted" x="130" y="0"/>
 </item>
-<item historyLabel="Service.java" index="1">
-<position info="not_deleted" x="1335" y="0"/>
+<item historyLabel="Article.java" index="2">
+<position info="not_deleted" x="585" y="0"/>
 </item>
-<item historyLabel="Service.java" index="1">
-<position/>
+<item historyLabel="Article.java" index="2">
+<position info="not_deleted" x="441" y="0"/>
 </item>
-<item historyLabel="Service.java" index="1">
-<position info="not_deleted" x="38" y="0"/>
+<item historyLabel="Article.java" index="2">
+<position info="not_deleted" x="1509" y="0"/>
 </item>
-<item historyLabel="Test.java" index="2">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="Salle.java" index="0">
+<position info="not_deleted" x="270" y="0"/>
 </item>
-<item historyLabel="Test.java" index="2">
-<position info="not_deleted" x="664" y="0"/>
+<item historyLabel="Auteur.java" index="3">
+<position info="not_deleted" x="562" y="0"/>
 </item>
-<item historyLabel="Service.java" index="1">
-<position info="not_deleted" x="38" y="0"/>
+<item historyLabel="Conference.java" index="1">
+<position info="not_deleted" x="4" y="0"/>
 </item>
-<item historyLabel="Test.java" index="2">
-<position info="not_deleted" x="664" y="0"/>
+<item historyLabel="Salle.java" index="0">
+<position info="not_deleted" x="382" y="0"/>
 </item>
-<item historyLabel="Test.java" index="2">
-<position info="not_deleted" x="163" y="0"/>
+<item historyLabel="Auteur.java" index="3">
+<position info="not_deleted" x="562" y="0"/>
 </item>
-<item historyLabel="Service.java" index="1">
-<position info="not_deleted" x="38" y="0"/>
-</item>
-<item historyLabel="Test.java" index="2">
-<position info="not_deleted" x="163" y="0"/>
-</item>
-<item historyLabel="Service.java" index="1">
-<position info="not_deleted" x="38" y="0"/>
-</item>
-<item historyLabel="Test.java" index="2">
-<position info="not_deleted" x="162" y="0"/>
-</item>
-<item historyLabel="Service.java" index="1">
-<position info="not_deleted" x="38" y="0"/>
-</item>
-<item historyLabel="Test.java" index="2">
-<position info="not_deleted" x="162" y="0"/>
-</item>
-<item historyLabel="Service.java" index="1">
-<position info="not_deleted" x="38" y="0"/>
-</item>
-<item historyLabel="Employer.java" index="0">
-<position info="not_deleted" x="298" y="0"/>
-</item>
-<item historyLabel="Test.java" index="2">
-<position info="not_deleted" x="162" y="0"/>
-</item>
-<item historyLabel="Employer.java" index="0">
-<position info="not_deleted" x="298" y="0"/>
-</item>
-<item historyLabel="Test.java" index="2">
-<position info="not_deleted" x="162" y="0"/>
-</item>
-<item historyLabel="Service.java" index="1">
-<position info="not_deleted" x="38" y="0"/>
-</item>
-<item historyLabel="Employer.java" index="0">
-<position info="not_deleted" x="298" y="0"/>
-</item>
-<item historyLabel="Test.java" index="2">
-<position info="not_deleted" x="162" y="0"/>
-</item>
-<item historyLabel="Employer.java" index="0">
-<position info="not_deleted" x="298" y="0"/>
-</item>
-<item historyLabel="Test.java" index="2">
-<position info="not_deleted" x="162" y="0"/>
-</item>
-<item historyLabel="Test.java" index="2">
-<position info="not_deleted" x="664" y="0"/>
-</item>
-<item historyLabel="Test.java" index="2">
-<position info="not_deleted" x="577" y="0"/>
-</item>
-<item historyLabel="Test.java" index="2">
-<position info="not_deleted" x="664" y="0"/>
-</item>
-<item historyLabel="Test.java" index="2">
-<position info="not_deleted" x="664" y="0"/>
-</item>
-<item historyLabel="Principal.java" index="3">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="Principal.java" index="3">
-<position/>
-</item>
-<item historyLabel="Principal.java" index="3">
-<position info="not_deleted" x="66" y="0"/>
-</item>
-<item historyLabel="Principal.java" index="3">
-<position info="not_deleted" x="42" y="0"/>
-</item>
-<item historyLabel="Principal.java" index="3">
-<position info="not_deleted" x="43" y="0"/>
-</item>
-<item historyLabel="Principal.java" index="3">
-<position info="not_deleted" x="41" y="0"/>
-</item>
-<item historyLabel="Principal.java" index="3">
-<position info="not_deleted" x="70" y="0"/>
-</item>
-<item historyLabel="Principal.java" index="3">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="Salle.java" index="0">
+<position info="not_deleted" x="382" y="0"/>
 </item>
 <item historyLabel="Test.java" index="4">
-<position info="not_deleted" x="514" y="0"/>
+<position info="not_deleted" x="703" y="0"/>
 </item>
-<item historyLabel="Livre.java" index="5">
-<position info="not_deleted" x="266" y="0"/>
-</item>
-<item historyLabel="Test.java" index="4">
-<position info="not_deleted" x="514" y="0"/>
+<item historyLabel="Conference.java" index="1">
+<position info="not_deleted" x="4" y="0"/>
 </item>
 <item historyLabel="Test.java" index="4">
-<position info="not_deleted" x="342" y="0"/>
-</item>
-<item historyLabel="Principal.java" index="3">
-<position info="not_deleted" x="0" y="0"/>
+<position info="not_deleted" x="703" y="0"/>
 </item>
 <item historyLabel="Test.java" index="4">
-<position info="not_deleted" x="342" y="0"/>
-</item>
-<item historyLabel="Livre.java" index="5">
-<position info="not_deleted" x="266" y="0"/>
-</item>
-<item historyLabel="Test.java" index="6">
-<position info="not_deleted" x="0" y="0"/>
+<position info="not_deleted" x="73" y="0"/>
 </item>
 <item historyLabel="Test.java" index="4">
-<position info="not_deleted" x="342" y="0"/>
+<position info="not_deleted" x="699" y="0"/>
+</item>
+<item historyLabel="Test.java" index="4">
+<position info="not_deleted" x="699" y="0"/>
+</item>
+<item historyLabel="Test.java" index="4">
+<position info="not_deleted" x="699" y="0"/>
+</item>
+<item historyLabel="Test.java" index="4">
+<position info="not_deleted" x="696" y="0"/>
+</item>
+<item historyLabel="Test.java" index="4">
+<position info="not_deleted" x="323" y="0"/>
+</item>
+<item historyLabel="Test.java" index="4">
+<position info="not_deleted" x="122" y="0"/>
+</item>
+<item historyLabel="Conference.java" index="1">
+<position info="not_deleted" x="4" y="0"/>
+</item>
+<item historyLabel="Article.java" index="2">
+<position info="not_deleted" x="12" y="0"/>
+</item>
+<item historyLabel="Test.java" index="4">
+<position info="not_deleted" x="295" y="0"/>
+</item>
+<item historyLabel="Conference.java" index="1">
+<position info="not_deleted" x="4" y="0"/>
+</item>
+<item historyLabel="Article.java" index="2">
+<position info="not_deleted" x="12" y="0"/>
+</item>
+<item historyLabel="Test.java" index="4">
+<position info="not_deleted" x="295" y="0"/>
+</item>
+<item historyLabel="Test.java" index="4">
+<position info="not_deleted" x="241" y="0"/>
+</item>
+<item historyLabel="Test.java" index="4">
+<position info="not_deleted" x="209" y="0"/>
+</item>
+<item historyLabel="Test.java" index="4">
+<position info="not_deleted" x="696" y="0"/>
+</item>
+<item historyLabel="Article.java" index="2">
+<position info="not_deleted" x="12" y="0"/>
+</item>
+<item historyLabel="Article.java" index="2">
+<position info="not_deleted" x="1507" y="0"/>
+</item>
+<item historyLabel="Article.java" index="2">
+<position info="not_deleted" x="1500" y="0"/>
+</item>
+<item historyLabel="Test.java" index="4">
+<position info="not_deleted" x="696" y="0"/>
+</item>
+<item historyLabel="Article.java" index="2">
+<position info="not_deleted" x="1500" y="0"/>
+</item>
+<item historyLabel="Test.java" index="4">
+<position info="not_deleted" x="696" y="0"/>
+</item>
+<item historyLabel="Salle.java" index="0">
+<position info="not_deleted" x="382" y="0"/>
+</item>
+<item historyLabel="Article.java" index="2">
+<position info="not_deleted" x="1500" y="0"/>
+</item>
+<item historyLabel="Test.java" index="4">
+<position info="not_deleted" x="696" y="0"/>
+</item>
+<item historyLabel="Salle.java" index="0">
+<position info="not_deleted" x="110" y="0"/>
+</item>
+<item historyLabel="Article.java" index="2">
+<position info="not_deleted" x="12" y="0"/>
+</item>
+<item historyLabel="Salle.java" index="0">
+<position info="not_deleted" x="62" y="0"/>
+</item>
+<item historyLabel="Article.java" index="2">
+<position info="not_deleted" x="12" y="0"/>
+</item>
+<item historyLabel="Test.java" index="4">
+<position info="not_deleted" x="696" y="0"/>
+</item>
+<item historyLabel="Salle.java" index="0">
+<position info="not_deleted" x="501" y="0"/>
+</item>
+<item historyLabel="Article.java" index="2">
+<position info="not_deleted" x="185" y="0"/>
+</item>
+<item historyLabel="Auteur.java" index="3">
+<position info="not_deleted" x="562" y="0"/>
 </item>
 <item active="true" historyLabel="Test.java" index="4">
-<position info="not_deleted" x="362" y="0"/>
+<position info="not_deleted" x="696" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -482,50 +494,50 @@
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Test.java" tooltip="ComObject/src/Ex2/Test.java">
-<persistable path="/ComObject/src/Ex2/Test.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Test.java" tooltip="ComObject/src/Ex6/Test.java">
+<persistable path="/ComObject/src/Ex6/Test.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Livre.java" tooltip="ComObject/src/ex3/Livre.java">
-<persistable path="/ComObject/src/ex3/Livre.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Auteur.java" tooltip="ComObject/src/Ex6/Auteur.java">
+<persistable path="/ComObject/src/Ex6/Auteur.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Test.java" tooltip="ComObject/src/ex3/Test.java">
-<persistable path="/ComObject/src/ex3/Test.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Conference.java" tooltip="ComObject/src/Ex6/Conference.java">
+<persistable path="/ComObject/src/Ex6/Conference.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Principal.java" tooltip="Swing/src/p1/Principal.java">
-<persistable path="/Swing/src/p1/Principal.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Salle.java" tooltip="ComObject/src/Ex6/Salle.java">
+<persistable path="/ComObject/src/Ex6/Salle.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Service.java" tooltip="ComObject/src/Ex2/Service.java">
-<persistable path="/ComObject/src/Ex2/Service.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Article.java" tooltip="ComObject/src/Ex6/Article.java">
+<persistable path="/ComObject/src/Ex6/Article.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Repertoire.java" tooltip="ComObject/src/Ex5/Repertoire.java">
+<persistable path="/ComObject/src/Ex5/Repertoire.java"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Employer.java" tooltip="ComObject/src/Ex2/Employer.java">
 <persistable path="/ComObject/src/Ex2/Employer.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Test.java" tooltip="Tp2/src/ex3/Test.java">
-<persistable path="/Tp2/src/ex3/Test.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Service.java" tooltip="ComObject/src/Ex2/Service.java">
+<persistable path="/ComObject/src/Ex2/Service.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Auteur.java" tooltip="Tp2/src/ex3/Auteur.java">
-<persistable path="/Tp2/src/ex3/Auteur.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Contact.java" tooltip="ComObject/src/Ex5/Contact.java">
+<persistable path="/ComObject/src/Ex5/Contact.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Editeur.java" tooltip="Tp2/src/ex3/Editeur.java">
-<persistable path="/Tp2/src/ex3/Editeur.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Principal.java" tooltip="ComObject/src/Ex5/Principal.java">
+<persistable path="/ComObject/src/Ex5/Principal.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Livre.java" tooltip="Tp2/src/ex3/Livre.java">
-<persistable path="/Tp2/src/ex3/Livre.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Test.java" tooltip="ComObject/src/Ex2/Test.java">
+<persistable path="/ComObject/src/Ex2/Test.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Main.java" tooltip="Tp2/src/ex2/Main.java">
-<persistable path="/Tp2/src/ex2/Main.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TestEmployer.java" tooltip="Tp2/src/mainEx1/TestEmployer.java">
+<persistable path="/Tp2/src/mainEx1/TestEmployer.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Conjoint.java" tooltip="Tp2/src/ex2/Conjoint.java">
-<persistable path="/Tp2/src/ex2/Conjoint.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Employer.java" tooltip="Tp2/src/ex1/Employer.java">
+<persistable path="/Tp2/src/ex1/Employer.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Mere.java" tooltip="Tp2/src/ex2/Mere.java">
-<persistable path="/Tp2/src/ex2/Mere.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Compte_Bancaire.java" tooltip="Tp1/src/Ex1/Compte_Bancaire.java">
+<persistable path="/Tp1/src/Ex1/Compte_Bancaire.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Pere.java" tooltip="Tp2/src/ex2/Pere.java">
-<persistable path="/Tp2/src/ex2/Pere.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Personne.java" tooltip="Tp2/src/ex2/Personne.java">
-<persistable path="/Tp2/src/ex2/Personne.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Test.java" tooltip="ComObject/src/ex3/Test.java">
+<persistable path="/ComObject/src/ex3/Test.java"/>
 </file>
 </mruList>
 </workbench>

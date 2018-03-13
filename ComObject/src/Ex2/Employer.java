@@ -15,6 +15,11 @@ public class Employer
 		this.service=service;
 	}
 	
+	public Employer()
+	{
+		
+	}
+	
 	public String getGarde()
 	{
 		return garde;
@@ -52,11 +57,7 @@ public class Employer
 	
 	public String toString()
 	{
-		return "Employer [nom=" + nom + ", garde=" + garde + ", "
-				+  "]";
+		return "Employer [nom=" + nom + ", garde=" + garde + ", "+  "]";
 	}
 	
-	
-
-
 }

@@ -1,0 +1,9 @@
+package Ex6;
+
+import java.util.ArrayList;
+public class Conference 
+{
+	ArrayList<Article>listArticle;
+	
+
+}

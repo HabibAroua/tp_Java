@@ -1,0 +1,11 @@
+package Ex5;
+
+public class Contact 
+{
+	private String nom;
+	private long num;
+	
+
+
+
+}

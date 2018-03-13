@@ -1,0 +1,11 @@
+package Ex6;
+
+public class Article 
+{
+	private int code;
+	private String titre;
+	private ArrayList<Auteur> listAuteur;
+	
+	
+
+}

@@ -1,0 +1,8 @@
+package Ex6;
+
+public class Salle 
+{
+	private String nom;
+	private int capacite;
+
+}

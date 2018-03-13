@@ -1,0 +1,38 @@
+package Ex6;
+
+import java.util.ArrayList;
+
+public class Salle 
+{
+	private String nom;
+	private int capacite;
+	private ArrayList<Article> list ;
+	
+	public Salle()
+	{
+		list =new ArrayList<Article>();
+	}
+	
+	public Salle(String nom , int capacite)
+	{
+		this.nom=nom;
+		this.capacite=capacite;
+		list =new ArrayList<Article>();
+	}
+	
+	public String getNom()
+	{
+		return this.nom;
+	}
+	
+	public int getCapacite()
+	{
+		return this.capacite;
+	}
+	
+	public String toString()
+	{
+		return "Le nom de salle est "+getNom()+" la capacité est "+getCapacite();
+	}
+
+}
