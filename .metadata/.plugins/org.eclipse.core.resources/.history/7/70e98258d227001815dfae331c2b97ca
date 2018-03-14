@@ -19,7 +19,6 @@ public class Test
 		//Pour Afficher les nom de toutes les salles
 		article.afficherNomSalle();
 		//Pour afficher les titres de tous les article presentés dans une salle
-		//Think of the solution
 		
 		
 	}
