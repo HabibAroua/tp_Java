@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="23" version="2.0">
+<workbench progressCount="24" version="2.0">
 <workbenchAdvisor/>
 <window height="734" maximized="true" width="1024" x="0" y="30">
 <fastViewData fastViewLocation="1024"/>
@@ -9,7 +9,7 @@
 </perspectiveBar>
 <coolbarLayout>
 <coolItem id="group.file" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="142" y="28"/>
+<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="190" y="28"/>
 <coolItem id="additions" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.debug.ui.launch.toolbar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="154" y="28"/>
@@ -35,6 +35,7 @@
 <part id="2"/>
 <part id="3"/>
 <part id="4"/>
+<part id="5"/>
 </presentation>
 </folder>
 </info>
@@ -55,9 +56,13 @@
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ComObject/src/Ex6/Auteur.java"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="562" selectionTopPixel="118"/>
 </editor>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Test.java" partName="Test.java" path="/home/habib/workspace/ComObject/src/Ex6/Test.java" title="Test.java" tooltip="ComObject/src/Ex6/Test.java" workbook="DefaultEditorWorkbook">
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Test.java" partName="Test.java" path="/home/habib/workspace/ComObject/src/Ex6/Test.java" title="Test.java" tooltip="ComObject/src/Ex6/Test.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ComObject/src/Ex6/Test.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="719" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="157" selectionTopPixel="0"/>
+</editor>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Principal.java" partName="Principal.java" path="/home/habib/workspace/Swing/src/p1/Principal.java" title="Principal.java" tooltip="Swing/src/p1/Principal.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Swing/src/p1/Principal.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="12" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
@@ -99,9 +104,6 @@
 </view>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
-<expanded>
-<category IMemento.internal.id="Warnings (28 items)"/>
-</expanded>
 <columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="387" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="300"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
@@ -219,6 +221,7 @@
 <alwaysOnActionSet id="org.eclipse.debug.ui.breakpointActionSet"/>
 <alwaysOnActionSet id="org.eclipse.jdt.debug.ui.JDTDebugActionSet"/>
 <alwaysOnActionSet id="org.eclipse.jdt.junit.JUnitActionSet"/>
+<alwaysOnActionSet id="org.eclipse.wb.core.ui.actionset"/>
 <show_view_action id="org.eclipse.jdt.ui.PackageExplorer"/>
 <show_view_action id="org.eclipse.jdt.ui.TypeHierarchy"/>
 <show_view_action id="org.eclipse.jdt.ui.SourceView"/>
@@ -324,34 +327,8 @@
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ComObject/src/Ex6/Article.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ComObject/src/Ex6/Auteur.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/ComObject/src/Ex6/Test.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Swing/src/p1/Principal.java"/>
 </editors>
-<item historyLabel="Conference.java" index="1">
-<position info="not_deleted" x="4" y="0"/>
-</item>
-<item historyLabel="Auteur.java" index="3">
-<position info="not_deleted" x="562" y="0"/>
-</item>
-<item historyLabel="Conference.java" index="1">
-<position info="not_deleted" x="4" y="0"/>
-</item>
-<item historyLabel="Salle.java" index="0">
-<position info="not_deleted" x="130" y="0"/>
-</item>
-<item historyLabel="Article.java" index="2">
-<position info="not_deleted" x="585" y="0"/>
-</item>
-<item historyLabel="Article.java" index="2">
-<position info="not_deleted" x="441" y="0"/>
-</item>
-<item historyLabel="Article.java" index="2">
-<position info="not_deleted" x="1509" y="0"/>
-</item>
-<item historyLabel="Salle.java" index="0">
-<position info="not_deleted" x="270" y="0"/>
-</item>
-<item historyLabel="Auteur.java" index="3">
-<position info="not_deleted" x="562" y="0"/>
-</item>
 <item historyLabel="Conference.java" index="1">
 <position info="not_deleted" x="4" y="0"/>
 </item>
@@ -472,8 +449,35 @@
 <item historyLabel="Auteur.java" index="3">
 <position info="not_deleted" x="562" y="0"/>
 </item>
-<item active="true" historyLabel="Test.java" index="4">
+<item historyLabel="Test.java" index="4">
 <position info="not_deleted" x="696" y="0"/>
+</item>
+<item historyLabel="Principal.java" index="5">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Principal.java" index="5">
+<position info="not_deleted" x="28" y="0"/>
+</item>
+<item historyLabel="Principal.java" index="5">
+<position/>
+</item>
+<item historyLabel="Principal.java" index="5">
+<position info="not_deleted" x="59" y="0"/>
+</item>
+<item historyLabel="Principal.java" index="5">
+<position info="not_deleted" x="11" y="0"/>
+</item>
+<item historyLabel="Principal.java" index="5">
+<position info="not_deleted" x="224" y="0"/>
+</item>
+<item historyLabel="Principal.java" index="5">
+<position info="not_deleted" x="184" y="6"/>
+</item>
+<item historyLabel="Principal.java" index="5">
+<position info="not_deleted" x="224" y="0"/>
+</item>
+<item active="true" historyLabel="Principal.java" index="5">
+<position info="not_deleted" x="184" y="6"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -492,6 +496,9 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Principal.java" tooltip="Swing/src/p1/Principal.java">
+<persistable path="/Swing/src/p1/Principal.java"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Test.java" tooltip="ComObject/src/Ex6/Test.java">
 <persistable path="/ComObject/src/Ex6/Test.java"/>
 </file>
@@ -533,9 +540,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Compte_Bancaire.java" tooltip="Tp1/src/Ex1/Compte_Bancaire.java">
 <persistable path="/Tp1/src/Ex1/Compte_Bancaire.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Test.java" tooltip="ComObject/src/ex3/Test.java">
-<persistable path="/ComObject/src/ex3/Test.java"/>
 </file>
 </mruList>
 </workbench>
