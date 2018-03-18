@@ -15,9 +15,4 @@ public class Conference
 		listArticle.add(a);
 	}
 	
-	public ArrayList<Article> getListArticle()
-	{
-		return listArticle;
-	}
-	
 }
