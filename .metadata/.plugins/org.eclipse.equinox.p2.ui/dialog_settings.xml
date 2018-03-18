@@ -11,7 +11,7 @@
 		<item value="1" key="AvailableViewType"/>
 		<item value="800" key="AvailableListSashWeight"/>
 		<item value="false" key="HideInstalledContent"/>
-		<item value="243" key="AvailableVersionColumnWidth"/>
+		<item value="251" key="AvailableVersionColumnWidth"/>
 		<item value="true" key="ShowLatestVersionsOnly"/>
 		<item value="200" key="AvailableDetailsSashWeight"/>
 		<item value="true" key="ResolveInstallWithAllSites"/>
