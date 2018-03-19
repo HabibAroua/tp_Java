@@ -22,9 +22,6 @@ public class Test
 		System.out.print(conf.getListArticle().get(0).toString());
 		//Think of the solution
 		
-		//supprimer un article
-		conf.SuprimerArticle("Sharlock homes");
-		
 		
 	}
 
