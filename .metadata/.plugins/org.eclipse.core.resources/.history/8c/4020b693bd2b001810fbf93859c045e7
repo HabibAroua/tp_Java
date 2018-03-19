@@ -31,14 +31,7 @@ public class Conference
 				break;
 			}
 		}
-		if(indice>-1)
-		{
-			listArticle.remove(indice);
-		}
-		else
-		{
-			System.out.println("Erreur au niveau de la suppression");
-		}
+		listArticle.remove(indice);
 	}
 	
 	

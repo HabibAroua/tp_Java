@@ -20,25 +20,9 @@ public class Conference
 		return listArticle;
 	}
 	
-	public void SuprimerArticle(String titre)
+	public void SuprimerArticle(String nom)
 	{
-		int indice=-1;
-		for(int i=0 ; i<listArticle.size() ; i++)
-		{
-			if(listArticle.get(i).getTitre().equals(titre))
-			{
-				indice=i;
-				break;
-			}
-		}
-		if(indice>-1)
-		{
-			listArticle.remove(indice);
-		}
-		else
-		{
-			System.out.println("Erreur au niveau de la suppression");
-		}
+		
 	}
 	
 	
