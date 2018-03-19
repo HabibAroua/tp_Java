@@ -91,10 +91,9 @@ public class Article
 		{
 			if(listAuteur.get(i).toString().equals(a.toString()))
 			{
-				test=true;
-				break;
+				
 			}
 		}
-		return test;
+		return false;
 	}
 }

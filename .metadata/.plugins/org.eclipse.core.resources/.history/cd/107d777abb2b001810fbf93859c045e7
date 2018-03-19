@@ -19,7 +19,7 @@ public class Test
 		//Pour Afficher les nom de toutes les salles
 		conf.getListArticle().get(0).afficherNomSalle();
 		//Pour afficher les titres de tous les article presentés dans une salle
-		System.out.print(conf.getListArticle().get(0).toString());
+		
 		//Think of the solution
 		
 		

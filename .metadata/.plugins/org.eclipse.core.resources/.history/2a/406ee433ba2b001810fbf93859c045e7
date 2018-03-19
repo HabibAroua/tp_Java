@@ -20,12 +20,4 @@ public class Conference
 		return listArticle;
 	}
 	
-	public void SuprimerArticle(String nom)
-	{
-		
-	}
-	
-	
-	
-	
 }

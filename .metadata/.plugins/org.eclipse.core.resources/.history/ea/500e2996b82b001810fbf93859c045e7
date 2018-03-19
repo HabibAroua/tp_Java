@@ -84,17 +84,11 @@ public class Article
 	}
 	
 	//vérifier un auteur existe ou non
-	private boolean isExistAuteur(Auteur a)
+	private boolean isExistAuteur()
 	{
-		boolean test=false;
 		for(int i=0 ; i<listAuteur.size() ; i++)
 		{
-			if(listAuteur.get(i).toString().equals(a.toString()))
-			{
-				test=true;
-				break;
-			}
+			
 		}
-		return test;
 	}
 }

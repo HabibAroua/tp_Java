@@ -82,19 +82,4 @@ public class Article
 			System.out.println(listSalle.get(i).getNom());
 		}
 	}
-	
-	//vérifier un auteur existe ou non
-	private boolean isExistAuteur(Auteur a)
-	{
-		boolean test=false;
-		for(int i=0 ; i<listAuteur.size() ; i++)
-		{
-			if(listAuteur.get(i).toString().equals(a.toString()))
-			{
-				test=true;
-				break;
-			}
-		}
-		return test;
-	}
 }

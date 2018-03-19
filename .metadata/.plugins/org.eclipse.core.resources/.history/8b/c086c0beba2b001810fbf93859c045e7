@@ -8,18 +8,18 @@ public class Test
 		Conference conf=new Conference();
 		Article article=new Article(1,"Sharlock homes");
 		conf.ajouterArticle(article);
-		//Pour creer un auteur
+		//Pour creer un article
 		Auteur auteur=new Auteur("Conan","Doyale","Narrateur");
 		//Pour creer une salle
 		Salle salle=new Salle();
 		//Pour affecter un auteur à un article
-		conf.getListArticle().get(0).affecterAuteur(auteur);
+		article.affecterAuteur(auteur);
 		//Pour affecter une salle à un article
-		conf.getListArticle().get(0).affecterSalle(new Salle("Free life"));
+		article.affecterSalle(new Salle("Free life"));
 		//Pour Afficher les nom de toutes les salles
-		conf.getListArticle().get(0).afficherNomSalle();
+		article.afficherNomSalle();
 		//Pour afficher les titres de tous les article presentés dans une salle
-		System.out.print(conf.getListArticle().get(0).toString());
+		
 		//Think of the solution
 		
 		
