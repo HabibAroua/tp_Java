@@ -13,12 +13,13 @@ public class Main
 		JRadioButton r1=new JRadioButton("1-Male");
 		JRadioButton r2=new JRadioButton("2-Femael");
 		r1.setBounds(40,110,80,40);
-		r2.setBounds(40,110, 80, 40);
+		r2.setBounds(120,110, 80, 40);
 		ButtonGroup buttonGroup=new ButtonGroup();
 		buttonGroup.add(r1);
 		buttonGroup.add(r2);
 		frame.add(r1);
 		frame.add(r2);
+		frame.setSize(400, 400);
 		frame.setLayout(null);
 		frame.setVisible(true);
 	}
