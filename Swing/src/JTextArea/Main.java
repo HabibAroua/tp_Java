@@ -1,6 +1,6 @@
 package JTextArea;
 import java.awt.Color;
-
+import java.awt.Font;
 import javax.swing.*;
 //JTextArea()
 //JTextArea(String s)
@@ -14,19 +14,25 @@ import javax.swing.*;
 
 public class Main
 {
-	public static void main(String[] args)
+	JTextArea area;
+	JFrame frame;
+	Main()
 	{
-		JTextArea area;
-		JFrame frame;
 		frame=new JFrame();
-		area=new JTextArea(200,300);
-		area.setBounds(15, 50, 200, 200);
+		area=new JTextArea(500,500);
+		area.setBounds(15, 50, 500, 500);
+		Font font =new Font("Verdana",Font.BOLD,16);
 		area.setBackground(Color.darkGray);
 		area.setForeground(Color.ORANGE);
+		area.setFont(font);
 		frame.add(area);
 		frame.setSize(500, 500);
 		area.setText("Hello \n hug mee");
 		frame.setLayout(null);
 		frame.setVisible(true);
+	}
+	public static void main(String[] args)
+	{
+		new Main();
 	}
 }
