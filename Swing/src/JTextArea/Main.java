@@ -23,5 +23,10 @@ public class Main
 		area.setBounds(15, 50, 200, 200);
 		area.setBackground(Color.darkGray);
 		area.setForeground(Color.ORANGE);
+		frame.add(area);
+		frame.setSize(500, 500);
+		area.setText("Hello \n hug mee");
+		frame.setLayout(null);
+		frame.setVisible(true);
 	}
 }
