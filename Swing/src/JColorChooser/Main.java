@@ -17,16 +17,19 @@ public class Main extends JFrame implements ActionListener
 	Main()
 	{
 		con=getContentPane();
-		btn.setLayout(new FlowLayout());
 		btn=new JButton("Colors");
+		btn.setLayout(new FlowLayout());
 		btn.addActionListener(this);
-		
+		con.add(btn);
 		
 	}
 	
 	public static void main(String[] args)
 	{
-		new Main();
+		Main m=new Main();
+		m.setSize(500,500);
+		m.setVisible(true);
+		m.setDefaultCloseOperation(EXIT_ON_CLOSE);
 	}
 
 	@Override
