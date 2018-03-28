@@ -1,6 +1,6 @@
 package JColorChooser;
-import javax.swing.JFrame;
 
+import javax.swing.JFrame;
 import java.awt.Color;
 import java.awt.Container;
 import java.awt.FlowLayout;
@@ -12,16 +12,20 @@ import javax.swing.JButton;
 
 public class Main extends JFrame implements ActionListener
 {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	JButton btn;
 	Container con;
 	Main()
 	{
 		con=getContentPane();
 		btn=new JButton("Colors");
-		btn.setLayout(new FlowLayout());
+		btn.setSize(20, 5);
+		con.setLayout(new FlowLayout());
 		btn.addActionListener(this);
 		con.add(btn);
-		
 	}
 	
 	public static void main(String[] args)
@@ -38,7 +42,5 @@ public class Main extends JFrame implements ActionListener
 		Color initialColor =Color.BLUE;
 		Color colorC=JColorChooser.showDialog(this, "choose a color", initialColor);
 		con.setBackground(colorC);
-		
 	}
-
 }
