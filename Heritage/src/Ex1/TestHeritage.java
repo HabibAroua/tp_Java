@@ -5,7 +5,7 @@ public class TestHeritage
 	public static void main(String[] args)
 	{
 		//Déclarer le tableau
-		Personne tab[]=new Personne[10];
+		Personne tab[]=new Personne[6];
 		//Presenter Enseignant , Etudiant et Etudiant chercheur 
 		Enseignant es1=new Enseignant("Doctor","Salah","Ben Salah");
 		Enseignant es2=new Enseignant("Chercheur","Mariem","Ayari");
@@ -34,7 +34,7 @@ public class TestHeritage
 	
 	public static void afficher( Personne tab[])
 	{
-		for(int i=0 ; i<6 ; i++)
+		for(int i=0 ; i<tab.length ; i++)
 		{
 			System.out.println(tab[i].toString());
 		}
@@ -42,7 +42,7 @@ public class TestHeritage
 	
 	public static void listeEnseignant(Personne tab[])
 	{
-		for(int i=0 ; i<6 ; i++)
+		for(int i=0 ; i<tab.length ; i++)
 		{
 			if(tab[i] instanceof  Enseignant)
 			{
@@ -56,7 +56,7 @@ public class TestHeritage
 		Scanner sc=new Scanner(System.in);
 		System.out.println("Donnez le domaine");
 		String domaine=sc.nextLine();
-		for(int i=0 ; i<6 ; i++)
+		for(int i=0 ; i<tab.length ; i++)
 		{
 			if(tab[i] instanceof EtudiantChercheur && domaine.equals(((EtudiantChercheur) tab[i]).getDomaine()))
 			{
