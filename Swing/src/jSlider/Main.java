@@ -9,7 +9,12 @@ public class Main extends JFrame
 	JPanel panel;
 	Main()
 	{
-		slider=new JSlider(JSlider.HORIZONTAL,0,70,25);
+		slider=new JSlider(JSlider.HORIZONTAL,0,100,25);
+		slider.setMajorTickSpacing(20);
+		slider.setMinorTickSpacing(10);
+		slider.setPaintTicks(true);
+		slider.setPaintLabels(true);
+		
 	    panel=new JPanel();
 	    panel.add(slider);
 	    add(panel);
