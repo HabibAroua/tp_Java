@@ -49,4 +49,9 @@ public class ProduitCompose extends Produit
 		this.fraisFab=fraisFab;
 		ProduitCompose.tauxTVA=tauxTVA;
 	}
+	
+	public void afficherPrix()
+	{
+		
+	}
 }
