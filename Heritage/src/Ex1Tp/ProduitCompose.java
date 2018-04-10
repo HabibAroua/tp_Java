@@ -52,6 +52,8 @@ public class ProduitCompose extends Produit
 	
 	public void afficherPrix()
 	{
-		
+		System.out.println("nom :"+getNom());
+		System.out.println("prix htc "+getPrixHT());
+		System.out.println("prixTTC "+(getPrixHT()+getPrixHT())*tauxTVA);
 	}
 }
