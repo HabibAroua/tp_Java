@@ -14,20 +14,32 @@ public class ProduitCompose extends Produit
 	
 	public void setTauxTVA(float tauxTVA)
 	{
-		this.tauxTVA=tauxTVA;
+		ProduitCompose.tauxTVA=tauxTVA;
+	}
+	
+	public float getTauxTVA()
+	{
+		return this.tauxTVA;
 	}
 	
 	public float getPrixHT()
 	{
-		float prix=0;
+		float prix=0.0F;
 	    for(int i=0 ;i<nb ; i++)
 	    {
 	    	if(tabComposition[i].getProduit() instanceof ProduitElementaire )
 	    	{
-	    		prix+=((ProduitElementaire)tabComposition[i].getProduit()).getPrixAchat();
+	    		prix+=((ProduitElementaire)tabComposition[i].getProduit()).getPrixAchat()*tabComposition[i].getQuantite();
+	    	}
+	    	else
+	    	{
+	    		if(tabComposition[i].getProduit() instanceof ProduitCompose)
+	    		{
+	    			prix+=((ProduitCompose)tabComposition[i].getProduit()).getPrixHT()*tabComposition[i].getQuantite();
+	    		}
 	    	}
 	    }
-		return prix;
+		return prix+fraisFab;
 	}
 	
 	//Constructeur
@@ -35,6 +47,6 @@ public class ProduitCompose extends Produit
 	{
 		super(nom,code);
 		this.fraisFab=fraisFab;
-		this.tauxTVA=tauxTVA;
+		ProduitCompose.tauxTVA=tauxTVA;
 	}
 }
