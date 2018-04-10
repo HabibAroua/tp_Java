@@ -3,9 +3,10 @@ package Ex1Tp;
 public class ProduitCompose extends Produit 
 {
 	private float fraisFab;
-	private float tauxTVA;
+	private static float tauxTVA=0.18F;
 	private Composition tabComposition[];
 	private static int nb=0;
+	
 	public void setFraisFab(float fraisFab)
 	{
 		this.fraisFab=fraisFab;
@@ -29,9 +30,7 @@ public class ProduitCompose extends Produit
 		return prix;
 	}
 	
-	
 	//Constructeur
-	
 	public ProduitCompose(String nom , int code , float fraisFab , float tauxTVA)
 	{
 		super(nom,code);

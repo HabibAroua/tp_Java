@@ -25,5 +25,5 @@ public class Produit
 	{
 		return "Le nom est "+getNom()+" le code est "+getCode();
 	}
-	//jjjjj
+	
 }

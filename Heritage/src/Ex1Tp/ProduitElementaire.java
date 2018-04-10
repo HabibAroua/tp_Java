@@ -19,5 +19,4 @@ public class ProduitElementaire extends Produit
 	{
 		return super.toString()+" le prix d'achat est "+getPrixAchat();
 	}
-
 }

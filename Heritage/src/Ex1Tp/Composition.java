@@ -19,5 +19,5 @@ public class Composition
 	{
 		this.p=p;
 		this.quantite=quantite;
-	}
+	}	
 }
