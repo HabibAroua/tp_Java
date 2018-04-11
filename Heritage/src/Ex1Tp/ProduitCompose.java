@@ -42,12 +42,12 @@ public class ProduitCompose extends Produit
 		return prix+fraisFab;
 	}
 	
-	//Constructeur
-	public ProduitCompose(String nom , int code , float fraisFab , float tauxTVA)
+	//Construct
+	public ProduitCompose(String nom , int code , float fraisFab ,Composition tabComposition[] )
 	{
 		super(nom,code);
 		this.fraisFab=fraisFab;
-		ProduitCompose.tauxTVA=tauxTVA;
+		tabComposition=new Composition[20];
 	}
 	
 	public void afficherPrix()
@@ -56,4 +56,5 @@ public class ProduitCompose extends Produit
 		System.out.println("prix htc "+getPrixHT());
 		System.out.println("prixTTC "+(getPrixHT()+getPrixHT())*tauxTVA);
 	}
+	
 }
