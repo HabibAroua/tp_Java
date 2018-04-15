@@ -3,6 +3,7 @@ package Ex2Tp;
 public class LettreRecommande extends Lettre
 {
 	private float montant;
+	
 	public LettreRecommande()
 	{
 		super();
