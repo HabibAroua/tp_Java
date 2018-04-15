@@ -36,7 +36,4 @@ public class Livre extends Document
 	{
 		return super.toString()+" l'auteur est "+getAuteur()+" nombre des pages "+getNbrPages();
 	}
-	
-	
-
 }
