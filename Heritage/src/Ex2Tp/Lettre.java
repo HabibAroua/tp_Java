@@ -51,6 +51,7 @@ public class Lettre
 
 	public float getAffranchissement() 
 	{
+		this.affranchissement=calculAffranchissement();
 		return this.affranchissement;
 	}
 
@@ -59,7 +60,7 @@ public class Lettre
 		this.affranchissement = affranchissement;
 	}
 	
-	public float calculAffranchissement()
+	private float calculAffranchissement()
 	{
 		float aff=0;
 		if(getPoids()<=50)
