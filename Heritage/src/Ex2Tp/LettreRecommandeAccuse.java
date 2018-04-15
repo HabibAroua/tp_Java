@@ -31,5 +31,5 @@ public class LettreRecommandeAccuse extends Lettre
 	{
 		return super.toString()+" le montant est "+getMontantRelative()+" l'adresse de retour est "+getAdresseRetour();
 	}
-
+	
 }
