@@ -22,9 +22,19 @@ public class LettreRecommandeAccuse extends Lettre
 		return this.adresseRetour;
 	}
 	
+	public void setAdresseRetour(String adresseRetour)
+	{
+		this.adresseRetour=adresseRetour;
+	}
+	
 	public float getMontantRelative()
 	{
 		return this.montantRelative;
+	}
+	
+	public void setMontantRelative(float montantRelative)
+	{
+		this.montantRelative=montantRelative;
 	}
 	
 	public String toString()
