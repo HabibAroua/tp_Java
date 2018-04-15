@@ -59,6 +59,30 @@ public class Lettre
 		this.affranchissement = affranchissement;
 	}
 	
+	public float calculAffranchissement()
+	{
+		float aff=0;
+		if(getPoids()<=50)
+		{
+			aff= getPoids()*0.250F;
+		}
+		else
+		{
+			if(getPoids()>50)
+			{
+				aff=getPoids()*0.500F;
+			}
+			else
+			{
+				if(getPoids()<=100)
+				{
+					aff=getPoids();
+				}
+			}
+		}
+		return aff;
+	}
+	
 	public String toString()
 	{
 		return "adresse destinatire est "+getAdresseDestinatire()+" adresse expéditeur est "+getAdresseExpediteur()+" le poids en gamme "+getPoids()+" l'affranchissement est "+getAffranchissement();
