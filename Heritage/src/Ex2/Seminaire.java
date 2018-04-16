@@ -33,15 +33,16 @@ public class Seminaire
 	
 	public void inscrire(Participant p)
 	{
-	     if(nb==99)
-	     {
-	    	 System.out.println("Le nombre des participants ne dépasse pas 100 personne !!");
-	     }
-	     else
-	     {
-	    	 list[nb++]=p;
-	     }
+	    if(nb==99)
+	    {
+	    	System.out.println("Le nombre des participants ne dépasse pas 100 personne !!");
+	    }
+	    else
+	    {
+	    	list[nb++]=p;
+	    }
 	}
+	
 	public void recette(int montantU , int montantF)
 	{
 		int montant=0;
