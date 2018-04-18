@@ -1,6 +1,6 @@
 package Exemple1;
 
-class O3
+public class O3
 {
 	private O2 unO2;
 	

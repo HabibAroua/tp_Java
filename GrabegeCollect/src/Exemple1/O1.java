@@ -14,7 +14,6 @@ public class O1
 		System.out.println("O1 est supp");
 	}
 
-	
 }
 
 
