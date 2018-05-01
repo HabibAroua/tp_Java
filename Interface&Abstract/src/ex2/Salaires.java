@@ -20,12 +20,32 @@ abstract class Employe
 
     public String getTitre()
     {
-    	return "L'employé " ;
+    	return "L'employé :" ;
     }
     
     public String getNom() 
     {
     	return getTitre() + prenom + " " + nom;
+    }
+    
+    public int getAge()
+    {
+    	return this.age;
+    }
+    
+    public void setAge(int age)
+    {
+    	this.age=age;
+    }
+    
+    public String getDate()
+    {
+    	return this.date;
+    }
+    
+    public void setDate(String date)
+    {
+    	this.date=date;
     }
     
 }
@@ -49,8 +69,6 @@ abstract class Commercial extends Employe
 
 class Vendeur extends Commercial
 {
-    private final static double POURCENT_VENDEUR = 0.2;
-    private final static int BONUS_VENDEUR = 400;
     
     public Vendeur(String prenom, String nom , int age , String date , double chiffreAffaire) 
     {
@@ -59,7 +77,7 @@ class Vendeur extends Commercial
 
     public double calculerSalaire()
     {
-        return (POURCENT_VENDEUR * getChiffreAffaire()) + BONUS_VENDEUR;
+        return (0.2 * getChiffreAffaire()) + 400;
     }
 
     public String getTitre()
@@ -71,8 +89,6 @@ class Vendeur extends Commercial
 
 class Representant extends Commercial
 {
-    private final static double POURCENT_REPRESENTANT = 0.2;
-    private final static int BONUS_REPRESENTANT = 800;
     
     public Representant(String prenom, String nom, int age, String date, double chiffreAffaire) 
     {
@@ -81,7 +97,7 @@ class Representant extends Commercial
 
     public double calculerSalaire() 
     {
-        return (POURCENT_REPRESENTANT * getChiffreAffaire()) + BONUS_REPRESENTANT;
+        return (0.2* getChiffreAffaire()) + 800;
     }
 
     public String getTitre()
@@ -92,18 +108,22 @@ class Representant extends Commercial
 
 class Technicien extends Employe 
 {
-    private final static double FACTEUR_UNITE = 5.0;
     private int unites;
-
+    
     public Technicien(String prenom, String nom, int age, String date, int unites)
     {
         super(prenom, nom, age, date);
         this.unites = unites;
     }
+    
+    public int getUnites()
+    {
+    	return this.unites;
+    }
 
     public double calculerSalaire() 
     {
-        return FACTEUR_UNITE * unites;
+        return 5 * unites;
     }
 
     public String getTitre()
@@ -114,7 +134,6 @@ class Technicien extends Employe
 
 class Manutentionnaire extends Employe 
 {
-    private final static double SALAIRE_HORAIRE = 65.0;
     private int heures;
 
     public Manutentionnaire(String prenom , String nom , int age , String date , int heures) 
@@ -122,10 +141,20 @@ class Manutentionnaire extends Employe
         super(prenom, nom, age, date);
         this.heures = heures;
     }
+    
+    public int getHeures()
+    {
+    	return this.heures;
+    }
+    
+    public void setHeures(int h)
+    {
+    	this.heures=h;
+    }
 
     public double calculerSalaire() 
     {
-        return SALAIRE_HORAIRE * heures;
+        return 65 * heures;
     }
 
     public String getTitre()
@@ -171,22 +200,22 @@ class Personnel
 {
     private Employe[] staff;
     private int nbreEmploye;
-    private final static int MAXEMPLOYE = 200;
+    private final static int MAX = 200;
 
     public Personnel() 
     {
-        staff = new Employe[MAXEMPLOYE];
+        staff = new Employe[MAX];
         nbreEmploye = 0;
     }
 
     public void ajouterEmploye(Employe e)
     {
         ++nbreEmploye;
-        if (nbreEmploye <= MAXEMPLOYE) 
+        if (nbreEmploye <= MAX) 
         {
             staff[nbreEmploye - 1] = e;
         } else {
-            System.out.println("Pas plus de " + MAXEMPLOYE + " employés");
+            System.out.println("Pas plus de " + MAX + " employés");
         }
     }
 
@@ -215,6 +244,7 @@ public class Salaires
 {
 	public static void main(String args[])
 	{
+		//tester le main
 		Personnel p = new Personnel();
         p.ajouterEmploye(new Vendeur("Pierre", "Business", 45, "1995", 30000));
         p.ajouterEmploye(new Representant("Léon", "Vendtout", 25, "2001", 20000));
