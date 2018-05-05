@@ -17,12 +17,14 @@ public class Main extends JFrame
 		label3=new JLabel("Confirm password",JLabel.RIGHT);
 		label4=new JLabel("Email",JLabel.LEFT);
 		label5=new JLabel("Cell phone",JLabel.CENTER);
+		label5.setVerticalAlignment(JLabel.TOP);
+		label5.setToolTipText("Place your number");
 		
-		getContentPane().add(label1);
-		getContentPane().add(label2);
-		getContentPane().add(label3);
-		getContentPane().add(label4);
-		getContentPane().add(label5);
+		add(label1);
+		add(label2);
+		add(label3);
+		add(label4);
+		add(label5);
 	}
 	public static void main(String[] args) 
 	{
