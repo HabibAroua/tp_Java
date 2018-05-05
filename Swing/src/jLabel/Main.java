@@ -17,10 +17,16 @@ public class Main extends JFrame
 		label3=new JLabel("Confirm password",JLabel.RIGHT);
 		label4=new JLabel("Email",JLabel.LEFT);
 		label5=new JLabel("Cell phone",JLabel.CENTER);
+		
+		getContentPane().add(label1);
+		getContentPane().add(label2);
+		getContentPane().add(label3);
+		getContentPane().add(label4);
+		getContentPane().add(label5);
 	}
 	public static void main(String[] args) 
 	{
-		new Main();
+		new Main().setVisible(true);;
 	}
 
 }
