@@ -11,6 +11,7 @@ public class Bibliotheque
 	{
 		
 	}
+	
 	public void ajouterOuvrage(Ouvrage o)
 	{
 		ouvrages.add(o);

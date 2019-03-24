@@ -11,6 +11,7 @@ public class Document
 		this.numEnreg=numEnreg;
 		this.titre=titre;
 	}
+	
 	public int getNumEnrg()
 	{
 		return this.numEnreg;

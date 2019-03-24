@@ -24,6 +24,4 @@ public class Roman extends Livre
 	{
 		return super.toString()+" le prix est "+getPrixLitt();
 	}
-	
-
 }
