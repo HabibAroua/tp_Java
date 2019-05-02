@@ -51,5 +51,5 @@ public class Calculator implements InterfaceCalculator
 	{
 		return (long) Math.pow(a, b);
 	}
-
+	
 }
