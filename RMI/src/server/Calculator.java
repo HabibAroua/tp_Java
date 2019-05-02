@@ -59,17 +59,20 @@ public class Calculator implements InterfaceCalculator
 		}while(choice != 7);
 	}
 	
-	private int sum(int x , int y)
+	@Override
+	public int sum(int x , int y)
 	{
 		return x+y;
 	}
 	
-	private int substraction(int x , int y)
+	@Override
+	public int substraction(int x , int y)
 	{
 		return x-y;
 	}
 	
-	private int div(int x , int y)
+	@Override
+	public int div(int x , int y)
 	{
 		try
 		{
@@ -82,12 +85,14 @@ public class Calculator implements InterfaceCalculator
 		}
 	}
 	
-	private long multiplication(int x , int y)
+	@Override
+	public long multiplication(int x , int y)
 	{
 		return x*y;
 	}
 	
-	private long factorial(int x)
+	@Override
+	public long factorial(int x)
 	{
 		long aux=0;
 		for(int i=2; i<=x ;i++)
@@ -97,7 +102,8 @@ public class Calculator implements InterfaceCalculator
 		return aux;
 	}
 	
-	private long power(int a , int b)
+	@Override
+	public long power(int a , int b)
 	{
 		return (long) Math.pow(a, b);
 	}

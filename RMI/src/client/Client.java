@@ -11,7 +11,7 @@ public class Client
 		try 
         {
             Registry registry = LocateRegistry.getRegistry(1099);
-            InterfaceCalculator stub = (InterfaceCalculator) registry.lookup("Hello");
+            InterfaceCalculator stub = (InterfaceCalculator) registry.lookup("InterfaceCalculator");
             stub.Calculate();
         }
         catch (Exception e) 
