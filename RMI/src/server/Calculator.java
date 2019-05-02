@@ -41,7 +41,7 @@ public class Calculator implements InterfaceCalculator
 				switch(choice)
 				{
 					case  1 : System.out.println("Sum is : "+sum(getINT(),getINT()));
-					break;
+						break;
 					case  2 : System.out.println("Substraction is : "+substraction(getINT(),getINT()));
 						break;
 					case  3 : System.out.println("Division is : "+div(getINT(),getINT()));
