@@ -5,7 +5,6 @@ import java.rmi.RemoteException;
 
 public interface InterfaceCalculator extends Remote 
 {
-	public void Calculate() throws RemoteException;
 	public int sum(int x , int y)throws RemoteException;
 	public int substraction(int x , int y)throws RemoteException;
 	public int div(int x , int y)throws RemoteException;
