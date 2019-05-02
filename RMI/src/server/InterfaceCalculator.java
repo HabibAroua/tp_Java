@@ -1,6 +1,8 @@
 package server;
 
-public interface InterfaceCalculator 
-{
+import java.rmi.Remote;
 
+public interface InterfaceCalculator extends Remote 
+{
+	public void Calculate();
 }
