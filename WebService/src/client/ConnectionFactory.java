@@ -3,6 +3,7 @@ package client;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.HashMap;
+
 public class ConnectionFactory
 {
 	private double API_VERSION = 0;
@@ -22,6 +23,14 @@ public class ConnectionFactory
 		this.API_VERSION=version;
 		this.API = url;
 		fields.put("version", String.valueOf(version));
+		for(int i = 0 ; i<endpoint.length ; i++)
+		{
+			String[] points = endpoint[i].split(";");
+			for(int j = 0 ; j < points.length ; j++)
+			{
+				fields.put(points[j].split(":")[0] , points[j].split(":")[1]);
+			}
+		}
 	}
 	
 }
