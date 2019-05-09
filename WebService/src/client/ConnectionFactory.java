@@ -17,5 +17,11 @@ public class ConnectionFactory
 	
 	private HashMap<String,String> fields =new HashMap<String , String>();
 	
+	public ConnectionFactory(String[] endpoint , String url , double version)
+	{
+		this.API_VERSION=version;
+		this.API = url;
+		fields.put("version", String.valueOf(version));
+	}
 	
 }
