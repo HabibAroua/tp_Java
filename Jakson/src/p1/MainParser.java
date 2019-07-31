@@ -17,7 +17,7 @@ public class MainParser
 	
 	public String getEmail() 
 	{
-		return email;
+		return this.email;
 	}
 	
 	public void setEmail(String email)
@@ -27,7 +27,7 @@ public class MainParser
 	
 	public String getDid_you_mean() 
 	{
-		return did_you_mean;
+		return this.did_you_mean;
 	}
 	
 	public void setDid_you_mean(String did_you_mean) 
@@ -37,7 +37,7 @@ public class MainParser
 	
 	public String getUser() 
 	{
-		return user;
+		return this.user;
 	}
 	
 	public void setUser(String user) 
@@ -47,7 +47,7 @@ public class MainParser
 	
 	public String getDomain()
 	{
-		return domain;
+		return this.domain;
 	}
 	
 	public void setDomain(String domain)
@@ -57,7 +57,7 @@ public class MainParser
 	
 	public boolean isFormat_valid() 
 	{
-		return format_valid;
+		return this.format_valid;
 	}
 	
 	public void setFormat_valid(boolean format_valid) 
@@ -67,7 +67,7 @@ public class MainParser
 	
 	public boolean isMx_found() 
 	{
-		return mx_found;
+		return this.mx_found;
 	}
 	
 	public void setMx_found(boolean mx_found)
@@ -77,7 +77,7 @@ public class MainParser
 	
 	public boolean isSmtp_check() 
 	{
-		return smtp_check;
+		return this.smtp_check;
 	}
 	
 	public void setSmtp_check(boolean smtp_check)
@@ -87,7 +87,7 @@ public class MainParser
 	
 	public String getCatch_all()
 	{
-		return catch_all;
+		return this.catch_all;
 	}
 	
 	public void setCatch_all(String catch_all) 
@@ -97,7 +97,7 @@ public class MainParser
 	
 	public boolean isRole() 
 	{
-		return role;
+		return this.role;
 	}
 	
 	public void setRole(boolean role)
@@ -107,7 +107,7 @@ public class MainParser
 	
 	public boolean isDisposable()
 	{
-		return disposable;
+		return this.disposable;
 	}
 	
 	public void setDisposable(boolean disposable)
@@ -117,7 +117,7 @@ public class MainParser
 	
 	public boolean isFree()
 	{
-		return free;
+		return this.free;
 	}
 	
 	public void setFree(boolean free) 
@@ -127,7 +127,7 @@ public class MainParser
 	
 	public double getScore() 
 	{
-		return score;
+		return this.score;
 	}
 	
 	public void setScore(double score)
