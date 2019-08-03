@@ -25,8 +25,7 @@ public class JSON_to_JAVA
         HttpURLConnection con = (HttpURLConnection) obj.openConnection();
         con.setRequestMethod("GET");
         con.setRequestProperty("User-Agent", "Mozilla/5.0");
-        BufferedReader in = new BufferedReader(
-            new InputStreamReader(con.getInputStream()));
+        BufferedReader in = new BufferedReader(new InputStreamReader(con.getInputStream()));
         String inputLine;
         StringBuffer response = new StringBuffer();
         
@@ -40,6 +39,7 @@ public class JSON_to_JAVA
         ObjectMapper obj_ObjectMapper = new ObjectMapper();
         Country_Bean obj_Country_Bean = new Country_Bean();
         obj_Country_Bean = obj_ObjectMapper.readValue(response.toString(), Country_Bean.class);
+        //now you can use all values
         System.out.println("-------Afer converting to java object-------------------");
         System.out.println("statusCode-" + obj_Country_Bean.getStatusCode());
         System.out.println("statusMessage-" + obj_Country_Bean.getStatusMessage());
