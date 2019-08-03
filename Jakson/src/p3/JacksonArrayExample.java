@@ -14,19 +14,17 @@ public class JacksonArrayExample
 
         try
         {
-
             // 1. convert JSON array to Array objects
-            Person[] pp1 = mapper.readValue(json, Person[].class);
-            System.out.println("JSON array to Array objects...");
-            for (Person person : pp1) 
-            {
-                System.out.println(person);
-            }
-
+            //Person[] pp1 = mapper.readValue(json, Person[].class);
+            //System.out.println("JSON array to Array objects...");
+            //for (Person person : pp1) 
+            //{
+              //  System.out.println(person);
+            //}
             // 2. convert JSON array to List of objects
             List<Person> ppl2 = Arrays.asList(mapper.readValue(json, Person[].class));
             System.out.println("\nJSON array to List of objects");
-            ppl2.stream().forEach(x -> System.out.println(x));
+            ppl2.stream().forEach(x -> System.out.println(x.getName()+" "+x.getAge()+"\n"));
         }
         catch (IOException e) 
         {
