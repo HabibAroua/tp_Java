@@ -12,7 +12,12 @@ public class User
 		this.firstname=firstname;
 		this.lastname=lastname;
 	}
-
+	
+	public User()
+	{
+		
+	}
+	
 	public int getId() 
 	{
 		return id;
@@ -43,4 +48,9 @@ public class User
 		this.lastname = lastname;
 	}
 	
+	@Override
+	public String toString()
+	{
+		return "[id : "+id+" firstname :"+firstname+" lastname : "+lastname+" ]";
+	}
 }
