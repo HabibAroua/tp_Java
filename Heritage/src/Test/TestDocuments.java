@@ -12,8 +12,6 @@ public class TestDocuments
 		//Biblitheque[0]=d1;
 		//Biblitheque[1]=d2;
 		//Biblitheque[2]=d3;
-		
-
 	}
 
 }
