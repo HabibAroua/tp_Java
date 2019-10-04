@@ -5,7 +5,6 @@ public class Document
 	private int numEnreg;
 	private String titre;
 	
-	
 	public Document(int numEnreg , String titre)
 	{
 		this.numEnreg=numEnreg;
@@ -34,7 +33,7 @@ public class Document
 	
 	public String toString()
 	{
-		return "numéro est "+getNumEnrg()+" le titre est "+getTitre();
+		return "numÃ©ro est "+getNumEnrg()+" le titre est "+getTitre();
 	}
 
 }
