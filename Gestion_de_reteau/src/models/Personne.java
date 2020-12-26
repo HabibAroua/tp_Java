@@ -7,7 +7,6 @@ public class Personne
 	private String prenom;
 	private double solde ;
 	
-	
 	public Personne(long numCin, String nom, String prenom, double solde) 
 	{
 		super();
@@ -67,6 +66,4 @@ public class Personne
 	{
 		return "Personne [numCin=" + numCin + ", nom=" + nom + ", prenom=" + prenom + ", solde=" + solde + "]";
 	}
-	
-	
 }

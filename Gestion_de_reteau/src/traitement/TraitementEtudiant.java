@@ -4,7 +4,6 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
-
 import models.Etudiant;
 
 public class TraitementEtudiant
@@ -13,20 +12,19 @@ public class TraitementEtudiant
 	
 	public TraitementEtudiant() 
 	{
-		list =new ArrayList<>();
+		list =new ArrayList<>(); //instancier l'arrayList
 		MyFiles f = new MyFiles();
-		f.setUrl("C:/projet_java/Etudiant.txt");
+		f.setUrl("C:/projet_java/Etudiant.txt"); //Donnez le schema de fichier avant de le lire 
 		try 
 		{
-			BufferedReader br = f.lire();
+			BufferedReader br = f.lire(); //stocker le contenu de fichier dans br
 			String st; 
 			while ((st = br.readLine()) != null)
 			{
 			    //System.out.println(st);
-			    this.list.add(ligne(st));
+			    list.add(ligne(st));
 			}
-			f.vider();
-		} 
+		} //pour stocker les informations de la fichier dans arrayList 
 		catch (FileNotFoundException e)
 		{
 			System.out.println("Erreur : "+e.getMessage());
@@ -39,7 +37,6 @@ public class TraitementEtudiant
 	
 	private Etudiant ligne(String l)
 	{
-
 		String[] data = l.split(":", 6);
 		Etudiant e = new Etudiant();
 		e.setNumCin(Long.parseLong(data[0]));
@@ -53,19 +50,44 @@ public class TraitementEtudiant
 	
 	public boolean ajouter(Etudiant e)
 	{
-		list.add(e);
-		return true;
+		try
+		{
+			list.add(e); //pour ajouter etudiant dans arrayList
+			sauvgarder(); //pour ajouter ce contenu dans le fichier
+			return true;
+		}
+		catch(Exception ex)
+		{
+			return false;
+		}
 	}
 	
 	public boolean supprimer(long cin)
 	{
-		list.remove(1);
-		return false;
+		try
+		{
+			list.remove(chercherIndice(cin));
+			sauvgarder();
+			return true;
+		}
+		catch(Exception e)
+		{
+			return false;
+		}
 	}
 	
 	public boolean modifier(long cin, Etudiant e)
 	{
-		return false;
+		try
+		{
+			list.set(chercherIndice(cin), e); // list.set(indice ili t7éb tbadlha, el valeur el jdid)
+			sauvgarder(); //apres la modification il va sauvgarder
+			return true;
+		} // CRUD (create , read , update , delete )
+		catch(Exception ex)
+		{
+			return false;
+		}
 	}
 	
 	public void afficher()
@@ -85,7 +107,7 @@ public class TraitementEtudiant
 		}
 		
 		MyFiles f = new MyFiles("C:/projet_java/Etudiant.txt",ch);
-		f.vider();
+		//f.vider();
 		f.ecrire();
 	}
 	
@@ -100,13 +122,24 @@ public class TraitementEtudiant
 		Etudiant e2 = new Etudiant(07472325, "Souha", "Ben Amor", 500, "I255662" ,"Iset Mahdia");
 		Etudiant e3 = new Etudiant(07472326, "Safa", "Miri", 500, "I255662" ,"Iset Mahdia");
 		TraitementEtudiant te = new TraitementEtudiant();
-		
 		//te.ajouter(e1);
 		//te.ajouter(e2);
 		//te.ajouter(e3);
 		te.supprimer(0);
-		te.sauvgarder();
-		
 		te.afficher();
+	}
+	
+	public int chercherIndice(long cin)
+	{
+		int indice = 0;
+		for(int i=0 ; i<list.size() ; i++) //size() donner le nombre d'element dans un arrayList
+		{
+			if(list.get(i).getNumCin() == cin)
+			{
+				indice = i;
+				break;
+			}
+		}
+		return indice;
 	}
 }

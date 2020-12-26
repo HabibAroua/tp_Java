@@ -1,6 +1,6 @@
 package traitement;
 
-import java.io.BufferedReader;
+import java.io.BufferedReader; //pour lire le contenu du fichier
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -49,35 +49,23 @@ public class MyFiles
 	{
 		try 
 		{
-			FileWriter myWriter = new FileWriter(this.url);
-		    myWriter.write(this.texte);
-		    myWriter.close();
+			FileWriter myWriter = new FileWriter(this.url); //Communiquer avec le fichier et ouvrir
+		    myWriter.write(this.texte); //Ecrire un texte dans ce fichier
+		    myWriter.close(); // La sauvgarde et la fermuture
 		    //System.out.println("Successfully wrote to the file.");
 		    return true;
 		}
 		catch (IOException e)
 		{
-			//System.out.println("An error occurred.");
-		    e.printStackTrace();
+			System.out.println("An error occurred.");
 		    return false;
 		}
 	}
 	
-	public BufferedReader lire() throws FileNotFoundException
+	public BufferedReader lire() throws FileNotFoundException // hiya nafssha try catch
 	{
 		File file = new File(url);   
 		BufferedReader br = new BufferedReader(new FileReader(file)); 
 		return br;
-	}
-	
-	public void vider() throws IOException
-	{
-		File file = new File(url);
-		if(file.exists())
-		{
-		    file.delete();
-		}
-		
-		file.createNewFile();
 	}
 }
