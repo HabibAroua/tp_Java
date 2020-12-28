@@ -3,8 +3,11 @@ package view;
 import java.util.Scanner;
 import models.Etudiant;
 import models.Personnel;
+import models.Repat;
+import traitement.Reclamation;
 import traitement.TraitementEtudiant;
 import traitement.TraitementPersonnel;
+import traitement.TraitementRepat;
 
 public class Admin 
 {
@@ -52,6 +55,21 @@ public class Admin
 		return p;
 	}
 	
+	public static Repat saisie_repat()
+	{
+		
+		System.out.println("Tapez le plat principale");
+		String platprincipale = Chaine();
+		System.out.println("Tapez le desrt");
+		String desert = Chaine();
+		System.out.println("Tapez la salade");
+		String salade = Chaine();
+		System.out.println("Est-ce que le pain existe Oui ou Non");
+		String pain = Chaine();
+		Repat r = new Repat(platprincipale,desert,salade,pain);
+		return r ;
+	}
+	
 	public static void gestion_des_etudiants()
 	{
 		Scanner sc =new Scanner(System.in);
@@ -66,7 +84,8 @@ public class Admin
 			System.out.println("2)Modifier un etudiant________________________|");
 			System.out.println("3)Supprimer un etudiant_______________________|");
 			System.out.println("4)Afficher la liste des etudiants_____________|");
-			System.out.println("5)retour");
+			System.out.println("5)Chercher un etudiant________________________|");
+			System.out.println("6)retour");
 			int choix = sc.nextInt();
 			switch(choix)
 			{
@@ -107,9 +126,20 @@ public class Admin
 				case 4 : 	System.out.println("La Lise des etudiants abonnées");
 							te.afficher();
 				break;
-				case 5 : loop = false;
+				case 5 : 	System.out.println("Tapez le num de cin pour chercher un etudiant");
+							Etudiant et = te.trouver(sc.nextLong());
+							if(et == null)
+							{
+								System.out.println("Etudiant n'exsite pas");
+							}
+							else
+							{
+								System.out.println(et.toString());
+							}
 				break;
-				default : System.out.println("Vous devez choisir un nombre entre 1 et 5");
+				case 6 : loop = false;
+				break;
+				default : System.out.println("Vous devez choisir un nombre entre 1 et 6");
 				break;
 			}
 		}while(loop == true);
@@ -129,7 +159,8 @@ public class Admin
 			System.out.println("2)Modifier un personnel________________________|");
 			System.out.println("3)Supprimer un personnel_______________________|");
 			System.out.println("4)Afficher la liste des personnels_____________|");
-			System.out.println("5)retour");
+			System.out.println("5)Chercher un Personnel________________________|");
+			System.out.println("6)retour");
 			System.out.println("SVP Tapez votre choix");
 			int choix = sc.nextInt();
 			switch(choix)
@@ -171,10 +202,244 @@ public class Admin
 	case 4 : 	System.out.println("La Lise des personnels abonnées");
 				tp.afficher();
 	break;
-	case 5 : loop = false;
+	case 5 : 	System.out.println("Tapez le num de cin pour chercher un personnel");
+				Personnel pr = tp.trouver(sc.nextLong());
+				if(pr == null)
+				{
+					System.out.println("Personnel n'exsite pas");
+				}
+				else
+				{
+					System.out.println(pr.toString());
+				}
+				break;
+	case 6 : loop = false;
 	break;
 	default : System.out.println("Vous devez choisir un nombre entre 1 et 5");
 	break;
+			}
+		}while(loop == true);
+	}
+	
+	public static void gestion_des_repas()
+	{
+		Scanner sc =new Scanner(System.in);
+		TraitementPersonnel tp = new TraitementPersonnel();
+		boolean loop = true;
+		do
+		{
+			System.out.println("_____________________________________________________");
+			System.out.println("|_________Gestion des repat_________________________|");
+			System.out.println("1)Gestion de repat par midi_________________________|");
+			System.out.println("2)Gestion de repat par soir_________________________|");
+			System.out.println("3)retour");
+			System.out.println("SVP Tapez votre choix");
+			int choix = sc.nextInt();
+			switch(choix)
+			{
+				case 1 : 	gestion_des_repas_par_midi(); 	
+				break;
+				case 2 : 	gestion_des_repas_par_soir();
+				break;
+				case 3 : 	loop = false;
+				break;
+				default :	 System.out.println("Vous devez choisir un nombre entre 1 et 3");
+				break;
+			}
+		}while(loop == true);
+	}
+	
+	public static void gestion_des_repas_par_midi()
+	{
+		TraitementRepat tr = new TraitementRepat();
+		Scanner sc =new Scanner(System.in);
+		TraitementPersonnel tp = new TraitementPersonnel();
+		boolean test = false; // pour tester les operations
+		boolean loop = true;
+		do
+		{
+			System.out.println("______________________________________________________");
+			System.out.println("|_________Gestion des repat par Midi_________________|");
+			System.out.println("1)Consulter les menu du midi_________________________|");
+			System.out.println("2)Modifier les menus_________________________________|");
+			System.out.println("3)retour");
+			System.out.println("SVP Tapez votre choix");
+			int choix = sc.nextInt();
+			switch(choix)
+			{
+				case 1 : 	tr.menuMidi();
+				break;
+				case 2 : 	menu_jour_midi();
+				break;
+				case 3 : 	loop = false;
+				break;
+				default :	 System.out.println("Vous devez choisir un nombre entre 1 et 3");
+				break;
+			}
+		}while(loop == true);
+	}
+	
+	public static void gestion_des_repas_par_soir()
+	{
+		Scanner sc =new Scanner(System.in);
+		TraitementRepat tr = new TraitementRepat();
+		boolean test = false; // pour tester les operations
+		boolean loop = true;
+		do
+		{
+			System.out.println("______________________________________________________");
+			System.out.println("|_________Gestion des repat par soir_________________|");
+			System.out.println("1)Consulter les menu du soir_________________________|");
+			System.out.println("2)Modifier les menus_________________________________|");
+			System.out.println("3)retour");
+			System.out.println("SVP Tapez votre choix");
+			int choix = sc.nextInt();
+			switch(choix)
+			{
+				case 1 : 	tr.menuSoir();
+				break;
+				case 2 : 	menu_jour_soir();
+				break;
+				case 3 : 	loop = false;
+				break;
+				default :	 System.out.println("Vous devez choisir un nombre entre 1 et 3");
+				break;
+			}
+		}while(loop == true);
+	}
+	
+	public static void menu_jour_midi()
+	{
+		Scanner sc =new Scanner(System.in);
+		TraitementRepat tr = new TraitementRepat();
+		Repat r;
+		boolean loop = true;
+		do
+		{
+			System.out.println("______________________________________________________");
+			System.out.println("|____________________Jours____________________________|");
+			System.out.println("1)Lundi_______________________________________________|");
+			System.out.println("2)Mardi_______________________________________________|");
+			System.out.println("3)Mercredi____________________________________________|");
+			System.out.println("4)Jeudi_______________________________________________|");
+			System.out.println("5)Vendredi____________________________________________|");
+			System.out.println("6)Samedi______________________________________________|");
+			System.out.println("7)Dimanche____________________________________________|");
+			System.out.println("8)Retour");
+			System.out.println("SVP Tapez votre choix");
+			int choix = sc.nextInt();
+			switch(choix)
+			{
+				case 1 : 	System.out.println(tr.tab[0]);
+							System.out.println("Modifier ce menu");
+							r = saisie_repat();
+							tr.tab[0] = r;
+							tr.sauvgarder("C:/projet_java/Lundi_m.txt", r);
+				break;
+				case 2 : 	System.out.println(tr.tab[1]);
+							System.out.println("Modifier ce menu");
+							r = saisie_repat();
+							tr.tab[1] = r;
+							tr.sauvgarder("C:/projet_java/Mardi_m.txt", r);
+				break;
+				case 3 : 	System.out.println(tr.tab[2]);
+							System.out.println("Modifier ce menu");
+							r = saisie_repat();
+							tr.tab[2] = r;
+							tr.sauvgarder("C:/projet_java/Mercredi_m.txt", r);
+				break;
+				case 4 : 	System.out.println(tr.tab[3]);
+							System.out.println("Modifier ce menu");
+							r = saisie_repat();
+							tr.tab[3] = r;
+							tr.sauvgarder("C:/projet_java/Jeudi_m.txt", r);
+				break;
+				case 5 : 	System.out.println(tr.tab[4]);
+							System.out.println("Modifier ce menu");
+							r = saisie_repat();
+							tr.tab[4] = r;
+							tr.sauvgarder("C:/projet_java/Vendredi_m.txt", r);
+				break;
+				case 6 : 	System.out.println(tr.tab[5]);
+							System.out.println("Modifier ce menu");
+							r = saisie_repat();
+							tr.tab[5] = r;
+							tr.sauvgarder("C:/projet_java/Samedi_m.txt", r);
+				break;
+				case 7 :	System.out.println("Fermé"); 	
+				break;
+				case 8 : 	loop = false;
+				break;
+				default : System.out.println("Vous devez choisir un nombre entre 1 et 8");	
+				break;
+			}
+		}while(loop == true);
+	}
+	
+	public static void menu_jour_soir()
+	{
+		Scanner sc =new Scanner(System.in);
+		TraitementRepat tr = new TraitementRepat();
+		Repat r;
+		boolean loop = true;
+		do
+		{
+			System.out.println("______________________________________________________");
+			System.out.println("|____________________Jours____________________________|");
+			System.out.println("1)Lundi_______________________________________________|");
+			System.out.println("2)Mardi_______________________________________________|");
+			System.out.println("3)Mercredi____________________________________________|");
+			System.out.println("4)Jeudi_______________________________________________|");
+			System.out.println("5)Vendredi____________________________________________|");
+			System.out.println("6)Samedi______________________________________________|");
+			System.out.println("7)Dimanche____________________________________________|");
+			System.out.println("8)Retour");
+			System.out.println("SVP Tapez votre choix");
+			int choix = sc.nextInt();
+			switch(choix)
+			{
+				case 1 : 	System.out.println(tr.tab1[0]);
+							System.out.println("Modifier ce menu");
+							r = saisie_repat();
+							tr.tab1[0] = r;
+							tr.sauvgarder("C:/projet_java/Lundi_s.txt", r);
+				break;
+				case 2 : 	System.out.println(tr.tab1[1]);
+							System.out.println("Modifier ce menu");
+							r = saisie_repat();
+							tr.tab1[1] = r;
+							tr.sauvgarder("C:/projet_java/Mardi_s.txt", r);
+				break;
+				case 3 : 	System.out.println(tr.tab1[2]);
+							System.out.println("Modifier ce menu");
+							r = saisie_repat();
+							tr.tab1[2] = r;
+							tr.sauvgarder("C:/projet_java/Mercredi_s.txt", r);
+				break;
+				case 4 : 	System.out.println(tr.tab1[3]);
+							System.out.println("Modifier ce menu");
+							r = saisie_repat();
+							tr.tab1[3] = r;
+							tr.sauvgarder("C:/projet_java/Jeudi_s.txt", r);
+				break;
+				case 5 : 	System.out.println(tr.tab1[4]);
+							System.out.println("Modifier ce menu");
+							r = saisie_repat();
+							tr.tab1[4] = r;
+							tr.sauvgarder("C:/projet_java/Vendredi_s.txt", r);
+				break;
+				case 6 : 	System.out.println(tr.tab1[5]);
+							System.out.println("Modifier ce menu");
+							r = saisie_repat();
+							tr.tab[5] = r;
+							tr.sauvgarder("C:/projet_java/Samedi_s.txt", r);
+				break;
+				case 7 :	System.out.println("Fermé"); 	
+				break;
+				case 8 : 	loop = false;
+				break;
+				default : System.out.println("Vous devez choisir un nombre entre 1 et 8");	
+				break;
 			}
 		}while(loop == true);
 	}
@@ -186,14 +451,14 @@ public class Admin
 		boolean loop = true;
 		do
 		{
-			System.out.println("________________________________");
-			System.out.println("|_____________Menu______________|");
-			System.out.println("1)Gestion des etudiants_________|");
-			System.out.println("2)Gestion des Personnels________|");
-			System.out.println("3)Gestion des repas_____________|");
-			System.out.println("4)Reserver______________________|");
-			System.out.println("5)Quitez________________________|");
-			System.out.println("|_______________________________|");
+			System.out.println("____________________________________");
+			System.out.println("|_____________Menu_________________|");
+			System.out.println("1)Gestion des etudiants____________|");
+			System.out.println("2)Gestion des Personnels___________|");
+			System.out.println("3)Gestion des repas________________|");
+			System.out.println("4)Reclamation______________________|");
+			System.out.println("5)Quitez___________________________|");
+			System.out.println("|__________________________________|");
 			System.out.println("SVP Tapez votre choix");
 			int choix = sc.nextInt();
 			switch(choix)
@@ -202,9 +467,10 @@ public class Admin
 				break;
 				case 2 : gestion_des_personnels();
 				break;
-				case 3 : System.out.println("Tu choisi gestion des reaps");
+				case 3 : gestion_des_repas();
 				break;
-				case 4 : System.out.println("Tu choisi reserver");
+				case 4 : Reclamation r = new Reclamation();
+						 r.afficher();
 				break;
 				case 5 : System.out.println("Tu as quitté le programme"); loop = false;
 				break;

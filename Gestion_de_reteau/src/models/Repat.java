@@ -77,4 +77,13 @@ public class Repat
 	{
 		this.day = day;
 	}
+
+	@Override
+	public String toString() 
+	{
+		return "Repat [platprincipale=" + platprincipale + ", desert=" + desert + ", salade=" + salade + ", pain="
+				+ pain + "]";
+	}
+	
+	
 }

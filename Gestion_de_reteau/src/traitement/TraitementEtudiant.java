@@ -66,12 +66,19 @@ public class TraitementEtudiant
 				}
 				else
 				{
-					list.add(e); //pour ajouter etudiant dans arrayList
-					sauvgarder(); //pour ajouter ce contenu dans le fichier
-					return true;
+					if(e.getSolde()<0.200)
+					{
+						System.out.println("Solde insuffisant");
+						return false;
+					}
+					else
+					{
+						list.add(e); //pour ajouter etudiant dans arrayList
+						sauvgarder(); //pour ajouter ce contenu dans le fichier
+						return true;
+					}
 				}
 			}
-			
 		}
 		catch(Exception ex)
 		{
@@ -88,9 +95,12 @@ public class TraitementEtudiant
 				System.out.println("Le cin de cet etudiant n'exsite pas");
 				return false;
 			}
-			list.remove(chercherIndice(cin));
-			sauvgarder();
-			return true;
+			else
+			{
+				list.remove(chercherIndice(cin));
+				sauvgarder();
+				return true;
+			}
 		}
 		catch(Exception e)
 		{
@@ -116,9 +126,17 @@ public class TraitementEtudiant
 				}
 				else
 				{
-					list.set(chercherIndice(cin), e); // list.set(indice ili t7éb tbadlha, el valeur el jdid)
-					sauvgarder(); //apres la modification il va sauvgarder
-					return true;
+					if(e.getSolde()<0.200)
+					{
+						System.out.println("Solde insuffisant");
+						return false;
+					}
+					else
+					{
+						list.set(chercherIndice(cin), e); // list.set(indice ili t7éb tbadlha, el valeur el jdid)
+						sauvgarder(); //apres la modification il va sauvgarder
+						return true;
+					}
 				}
 			}
 			
@@ -146,31 +164,25 @@ public class TraitementEtudiant
 		}
 		
 		MyFiles f = new MyFiles("C:/projet_java/Etudiant.txt",ch);
-		//f.vider();
 		f.ecrire();
 	}
 	
 	public Etudiant trouver(long cin)
 	{
-		return null;
-	}
-	
-	public static void main(String args[]) throws IOException
-	{
-		Etudiant e1 = new Etudiant(07472324, "Habib", "Aroua", 500, "I255662" ,"Iset Mahdia");
-		Etudiant e2 = new Etudiant(07472325, "Souha", "Ben Amor", 500, "I255662" ,"Iset Mahdia");
-		Etudiant e3 = new Etudiant(07472326, "Safa", "Miri", 500, "I255662" ,"Iset Mahdia");
-		TraitementEtudiant te = new TraitementEtudiant();
-		//te.ajouter(e1);
-		//te.ajouter(e2);
-		//te.ajouter(e3);
-		te.supprimer(0);
-		te.afficher();
+		int indice = chercherIndice(cin);
+		if(indice == -1)
+		{
+			return null;
+		}
+		else
+		{
+			return list.get(indice);
+		}
 	}
 	
 	public int chercherIndice(long cin)
 	{
-		int indice = 0;
+		int indice = -1;
 		for(int i=0 ; i<list.size() ; i++) //size() donner le nombre d'element dans un arrayList
 		{
 			if(list.get(i).getNumCin() == cin)

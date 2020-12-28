@@ -1,10 +1,19 @@
 package view;
 
 import java.util.Scanner;
+
+import traitement.Reclamation;
 import traitement.TraitementRepat;
 
 public class User 
 {
+	
+	public static String Chaine()
+	{
+		Scanner sc = new Scanner(System.in);
+		return sc.nextLine();
+	}
+	
 	public static void consulter_toute_la_semaine(TraitementRepat tr)
 	{
 		Scanner sc =new Scanner(System.in);		
@@ -45,7 +54,8 @@ public class User
 			System.out.println("1)Constuler le plat suivant________________________________________________|");
 			System.out.println("2)Constuler les plats de toutes la semaine_________________________________|");
 			System.out.println("3)Reserver ou confirmer sa présence________________________________________|");
-			System.out.println("4)Quitez___________________________________________________________________|");
+			System.out.println("4)Recalamtion______________________________________________________________|");
+			System.out.println("5)Quitez___________________________________________________________________|");
 			System.out.println("|__________________________________________________________________________|");
 			System.out.println("SVP Tapez votre choix");
 			
@@ -58,7 +68,20 @@ public class User
 				break;
 				case 3 : System.out.println("Reservation");
 				break;
-				case 4 : System.out.println("Tu as quitté le programme"); loop = false;
+				case 4 : Reclamation r = new Reclamation();
+						 System.out.println("Si vous avez une reclation ?");
+						 boolean test = r.ajouterReclamation(Chaine());
+						 if(test == true)
+						 {
+							 System.out.println("Cette reclamation est envoyée");
+						 }
+						 else
+						 {
+							 System.out.println("Erreur");
+						 }
+						
+				break;
+				case 5 : System.out.println("Tu as quitté le programme"); loop = false;
 				break;
 				default : System.out.println("Vous devez choisir un nombre entre 1 et 4");
 				break;

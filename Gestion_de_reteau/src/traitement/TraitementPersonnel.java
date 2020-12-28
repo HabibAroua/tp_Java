@@ -4,8 +4,6 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
-
-import models.Etudiant;
 import models.Personnel;;
 
 public class TraitementPersonnel 
@@ -53,9 +51,25 @@ public class TraitementPersonnel
 	{
 		try
 		{
-			list.add(p); //pour ajouter personnel dans arrayList
-			sauvgarder(); //pour ajouter ce contenu dans le fichier
-			return true;
+			if(cinExite(p.getNumCin())== true)
+			{
+				System.out.println("Le num de cin est existe");
+				return false;
+			}
+			else
+			{
+				if(p.getSolde()<0.200)
+				{
+					System.out.println("Solde insuffisant");
+					return false;
+				}
+				else
+				{
+					list.add(p); //pour ajouter personnel dans arrayList
+					sauvgarder(); //pour ajouter ce contenu dans le fichier
+					return true;
+				}
+			}
 		}
 		catch(Exception ex)
 		{
@@ -81,9 +95,25 @@ public class TraitementPersonnel
 	{
 		try
 		{
-			list.set(chercherIndice(cin), p); // list.set(indice ili t7éb tbadlha, el valeur el jdid)
-			sauvgarder(); //apres la modification il va sauvgarder
-			return true;
+			if(cinExite(p.getNumCin())== true)
+			{
+				System.out.println("Le num de cin est existe");
+				return false;
+			}
+			else
+			{
+				if(p.getSolde()<0.200)
+				{
+					System.out.println("Solde insuffisant");
+					return false;
+				}
+				else
+				{
+					list.set(chercherIndice(cin), p); // list.set(indice ili t7éb tbadlha, el valeur el jdid)
+					sauvgarder(); //apres la modification il va sauvgarder
+					return true;
+				}
+			}
 		} // CRUD (create , read , update , delete )
 		catch(Exception ex)
 		{
@@ -113,7 +143,7 @@ public class TraitementPersonnel
 	
 	public int chercherIndice(long cin)
 	{
-		int indice = 0;
+		int indice = -1;
 		for(int i=0 ; i<list.size() ; i++) //size() donner le nombre d'element dans un arrayList
 		{
 			if(list.get(i).getNumCin() == cin)
@@ -137,5 +167,18 @@ public class TraitementPersonnel
 			}
 		}
 		return test;
+	}
+	
+	public Personnel trouver(long cin)
+	{
+		int indice = chercherIndice(cin);
+		if(indice == -1)
+		{
+			return null;
+		}
+		else
+		{
+			return list.get(indice);
+		}
 	}
 }

@@ -8,8 +8,8 @@ import models.Repat;
 
 public class TraitementRepat 
 {
-	Repat[] tab;
-	Repat[]tab1;
+	public Repat[] tab;
+	public Repat[]tab1;
 	
 	public TraitementRepat()
 	{
@@ -182,9 +182,10 @@ public class TraitementRepat
 		return r;
 	}
 	
-	public static void main(String args[])
-	{
-		TraitementRepat  tr = new TraitementRepat();
-		tr.menu();
+	public void sauvgarder(String url, Repat r)
+	{		
+		MyFiles f = new MyFiles(url,r.getPlatprincipale()+":"+r.getDesert()+":"+r.getSalade()+":"+r.getPain());
+		f.ecrire();
+		System.out.println("Vous avez modifier ce menu");
 	}
 }
