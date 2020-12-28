@@ -52,9 +52,26 @@ public class TraitementEtudiant
 	{
 		try
 		{
-			list.add(e); //pour ajouter etudiant dans arrayList
-			sauvgarder(); //pour ajouter ce contenu dans le fichier
-			return true;
+			if(cinExite(e.getNumCin())== true)
+			{
+				System.out.println("Le num de cin est existe");
+				return false;
+			}
+			else
+			{
+				if(Identifiant_universite_Exite(e.getIdantifiant_universitaire()) == true)
+				{
+					System.out.println("L'identifiant de l'etudiant est existe");
+					return false;
+				}
+				else
+				{
+					list.add(e); //pour ajouter etudiant dans arrayList
+					sauvgarder(); //pour ajouter ce contenu dans le fichier
+					return true;
+				}
+			}
+			
 		}
 		catch(Exception ex)
 		{
@@ -66,6 +83,11 @@ public class TraitementEtudiant
 	{
 		try
 		{
+			if(cinExite(cin)== false)
+			{
+				System.out.println("Le cin de cet etudiant n'exsite pas");
+				return false;
+			}
 			list.remove(chercherIndice(cin));
 			sauvgarder();
 			return true;
@@ -80,9 +102,26 @@ public class TraitementEtudiant
 	{
 		try
 		{
-			list.set(chercherIndice(cin), e); // list.set(indice ili t7éb tbadlha, el valeur el jdid)
-			sauvgarder(); //apres la modification il va sauvgarder
-			return true;
+			if(cinExite(e.getNumCin())== true)
+			{
+				System.out.println("Le num de cin est existe");
+				return false;
+			}
+			else
+			{
+				if(Identifiant_universite_Exite(e.getIdantifiant_universitaire()) == true)
+				{
+					System.out.println("L'identifiant de l'etudiant est existe");
+					return false;
+				}
+				else
+				{
+					list.set(chercherIndice(cin), e); // list.set(indice ili t7éb tbadlha, el valeur el jdid)
+					sauvgarder(); //apres la modification il va sauvgarder
+					return true;
+				}
+			}
+			
 		} // CRUD (create , read , update , delete )
 		catch(Exception ex)
 		{
@@ -142,4 +181,33 @@ public class TraitementEtudiant
 		}
 		return indice;
 	}
+	
+	public boolean cinExite(long cin)
+	{
+		boolean test = false;
+		for(int i=0 ; i<list.size() ; i++) //size() donner le nombre d'element dans un arrayList
+		{
+			if(list.get(i).getNumCin() == cin)
+			{
+				test = true;
+				break;
+			}
+		}
+		return test;
+	}
+	
+	public boolean Identifiant_universite_Exite(String identifiant) //identifcation etudiant dans la carte etudiant
+	{
+		boolean test = false;
+		for(int i=0 ; i<list.size() ; i++) //size() donner le nombre d'element dans un arrayList
+		{
+			if(list.get(i).getIdantifiant_universitaire().equals(identifiant))
+			{
+				test = true;
+				break;
+			}
+		}
+		return test;
+	}
+	
 }

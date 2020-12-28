@@ -1,0 +1,4 @@
+1995990:Safa:Miri:500.0:I255662:Iset Mahdia          
+255562:Salah:Ben Abdelkader:600.0:3669851:ISI Mahdia         
+966552:Mahdi:Titouh:8000.0:3225874:ISSEC Mahdia      
+96625:Marwen:Titouh:9663.0:21005:ISET Mahdia      

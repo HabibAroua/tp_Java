@@ -25,6 +25,7 @@ public class Repat
     {
         Repat.temps = temps;
     }
+    
     public static void main(String args[]) 
     {
     	Repat[] tab;

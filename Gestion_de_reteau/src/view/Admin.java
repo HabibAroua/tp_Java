@@ -2,15 +2,19 @@ package view;
 
 import java.util.Scanner;
 import models.Etudiant;
+import models.Personnel;
 import traitement.TraitementEtudiant;
+import traitement.TraitementPersonnel;
 
-public class Main 
+public class Admin 
 {
+	
 	public static String Chaine()
 	{
 		Scanner sc = new Scanner(System.in);
 		return sc.nextLine();
 	}
+	
 	public static Etudiant saisie_etudiant()
 	{
 		Scanner sc = new Scanner(System.in);
@@ -28,6 +32,24 @@ public class Main
 		String universite = Chaine();
 		Etudiant e = new Etudiant(num_cin,nom,prenom,solde,idantifiant_universitaire,universite);
 		return e;
+	}
+	
+	public static Personnel saisie_personnel()
+	{
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Donnez le num de cin");
+		long num_cin = sc.nextLong();
+		System.out.println("Donnez le nom");
+		String nom = Chaine();
+		System.out.println("Donnez le prenom");
+		String prenom = Chaine();
+		System.out.println("Donnez le solde");
+		double solde = sc.nextDouble();
+		System.out.println("Donnez la profession");
+		String profession = Chaine();
+		
+		Personnel p = new Personnel(num_cin,nom,prenom,solde,profession);
+		return p;
 	}
 	
 	public static void gestion_des_etudiants()
@@ -96,7 +118,8 @@ public class Main
 	public static void gestion_des_personnels()
 	{
 		Scanner sc =new Scanner(System.in);
-		
+		TraitementPersonnel tp = new TraitementPersonnel();
+		boolean test = false; // pour tester les operations
 		boolean loop = true;
 		do
 		{
@@ -111,24 +134,54 @@ public class Main
 			int choix = sc.nextInt();
 			switch(choix)
 			{
-				case 1 : System.out.println("Ajouter");
-				break;
-				case 2 : System.out.println("Modifier");
-				break;
-				case 3 : System.out.println("Supprimer");
-				break;
-				case 4 : System.out.println("Afficher");
-				break;
-				case 5 : loop = false;
-				break;
-				default : System.out.println("Vous devez choisir un nombre entre 1 et 5");
-				break;
+			case 1 : 	
+				Personnel p = saisie_personnel();
+				test = tp.ajouter(p);
+				if(test == true)
+				{
+					System.out.println("L'insertion du personnel est effectué avec success");
+				}
+				else
+				{
+					System.out.println("Erreur au niveau de l'insertion");
+				}
+	break;
+	case 2 : 	System.out.println("Donnez le num de cin pour la modification");
+				test = tp.modifier(sc.nextLong(), saisie_personnel());
+				if(test == true)
+				{
+					System.out.println("La mise à jour du personnel est effectué avec success");
+				}
+				else
+				{
+					System.out.println("Erreur au niveau de la mise à jour");
+				}
+	break;
+	case 3 : 	System.out.println("Donnez le num de cin pour la suppression");
+				test = tp.supprimer(sc.nextLong());
+				if(test == true)
+				{
+					System.out.println("Suppression effectué avec success");
+				}
+				else
+				{
+					System.out.println("Erreur au niveau de la suppression");
+				}
+	break;
+	case 4 : 	System.out.println("La Lise des personnels abonnées");
+				tp.afficher();
+	break;
+	case 5 : loop = false;
+	break;
+	default : System.out.println("Vous devez choisir un nombre entre 1 et 5");
+	break;
 			}
 		}while(loop == true);
 	}
 	
 	public static void main(String[] args) 
 	{
+		System.out.println("\n *** Bienvenue au restaurant universitaire de Mahdia *** \n ");
 		Scanner sc =new Scanner(System.in);
 		boolean loop = true;
 		do

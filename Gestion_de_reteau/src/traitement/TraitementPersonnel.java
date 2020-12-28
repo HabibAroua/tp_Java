@@ -49,19 +49,46 @@ public class TraitementPersonnel
 		return p;
 	}
 	
-	public boolean ajouter(Etudiant e)
+	public boolean ajouter(Personnel p)
 	{
-		return false;
+		try
+		{
+			list.add(p); //pour ajouter personnel dans arrayList
+			sauvgarder(); //pour ajouter ce contenu dans le fichier
+			return true;
+		}
+		catch(Exception ex)
+		{
+			return false;
+		}
 	}
 	
 	public boolean supprimer(long cin)
 	{
-		return false;
+		try
+		{
+			list.remove(chercherIndice(cin));
+			sauvgarder();
+			return true;
+		}
+		catch(Exception e)
+		{
+			return false;
+		}
 	}
 	
-	public boolean modifier(long cin, Etudiant e)
+	public boolean modifier(long cin, Personnel p)
 	{
-		return false;
+		try
+		{
+			list.set(chercherIndice(cin), p); // list.set(indice ili t7éb tbadlha, el valeur el jdid)
+			sauvgarder(); //apres la modification il va sauvgarder
+			return true;
+		} // CRUD (create , read , update , delete )
+		catch(Exception ex)
+		{
+			return false;
+		}
 	}
 	
 	public void afficher()
@@ -70,5 +97,45 @@ public class TraitementPersonnel
 		{
 			System.out.println(list.get(i));
 		}
+	}
+	
+	public void sauvgarder() throws IOException
+	{
+		String ch = ""; 
+		for(int i =0 ; i<list.size() ; i++)
+		{
+			ch = ch + list.get(i).getNumCin()+":"+list.get(i).getNom()+":"+list.get(i).getPrenom()+":"+list.get(i).getSolde()+":"+list.get(i).getProffesion()+" \n";
+		}
+		
+		MyFiles f = new MyFiles("C:/projet_java/Personnel.txt",ch);
+		f.ecrire();
+	}
+	
+	public int chercherIndice(long cin)
+	{
+		int indice = 0;
+		for(int i=0 ; i<list.size() ; i++) //size() donner le nombre d'element dans un arrayList
+		{
+			if(list.get(i).getNumCin() == cin)
+			{
+				indice = i;
+				break;
+			}
+		}
+		return indice;
+	}
+	
+	public boolean cinExite(long cin)
+	{
+		boolean test = false;
+		for(int i=0 ; i<list.size() ; i++) //size() donner le nombre d'element dans un arrayList
+		{
+			if(list.get(i).getNumCin() == cin)
+			{
+				test = true;
+				break;
+			}
+		}
+		return test;
 	}
 }
