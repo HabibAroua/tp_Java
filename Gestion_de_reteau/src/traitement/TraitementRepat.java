@@ -101,23 +101,23 @@ public class TraitementRepat
  		{
  			if(jour==2)
  			{
- 				System.out.println("voici le menu de lundi matin \n " + tab1[0].getPlatprincipale() + "|"+ tab1[0].getDesert()+ "|"+ tab1[0].getSalade()+ "|"+ tab1[0].getPain() );
+ 				System.out.println("voici le menu de lundi soir \n " + tab1[0].getPlatprincipale() + "|"+ tab1[0].getDesert()+ "|"+ tab1[0].getSalade()+ "|"+ tab1[0].getPain() );
  			}
  			if(jour==3)
  			{
- 				System.out.println("voici le menu de mardi matin \n " + tab1[1].getPlatprincipale() + "|"+ tab1[1].getDesert()+ "|"+ tab1[1].getSalade()+ "|"+ tab1[1].getPain() );
+ 				System.out.println("voici le menu de mardi soir \n " + tab1[1].getPlatprincipale() + "|"+ tab1[1].getDesert()+ "|"+ tab1[1].getSalade()+ "|"+ tab1[1].getPain() );
  			}
  			if(jour==4)
  			{
- 				System.out.println("voici le menu de mercredi matin \n " + tab1[2].getPlatprincipale() + "|"+ tab1[2].getDesert()+ "|"+ tab1[2].getSalade()+ "|"+ tab1[2].getPain() );
+ 				System.out.println("voici le menu de mercredi soir \n " + tab1[2].getPlatprincipale() + "|"+ tab1[2].getDesert()+ "|"+ tab1[2].getSalade()+ "|"+ tab1[2].getPain() );
  			}
  			if(jour==5)
  			{
- 				System.out.println("voici le menu de mercredi matin \n " + tab1[3].getPlatprincipale() + "|"+ tab1[2].getDesert()+ "|"+ tab1[2].getSalade()+ "|"+ tab1[2].getPain() );
+ 				System.out.println("voici le menu de mercredi soir \n " + tab1[3].getPlatprincipale() + "|"+ tab1[2].getDesert()+ "|"+ tab1[2].getSalade()+ "|"+ tab1[2].getPain() );
  			}
  			if(jour==6)
  			{
- 				System.out.println("voici le menu de vendredi soire \n " +tab1[4].getPlatprincipale() + "|"+ tab1[3].getDesert()+ "|"+ tab1[3].getSalade()+ "|"+ tab1[3].getPain() );
+ 				System.out.println("voici le menu de vendredi soir \n " +tab1[4].getPlatprincipale() + "|"+ tab1[3].getDesert()+ "|"+ tab1[3].getSalade()+ "|"+ tab1[3].getPain() );
  			}
  		}
  		if((heure >= 0) && (heure <= 3) )    
@@ -147,6 +147,67 @@ public class TraitementRepat
  				System.out.println("voici le menu de samedi matin \n " + tab[5].getPlatprincipale() + "|"+ tab[5].getDesert()+ "|"+ tab[5].getSalade()+ "|"+ tab[5].getPain() );
  			}
        }
+	}
+	
+	public Repat getRepatMaintenant()
+	{
+		Calendar calendar=Calendar.getInstance();
+		int jour =  calendar.get(Calendar.DAY_OF_WEEK);
+		Calendar calendar1=Calendar.getInstance();
+ 		int heure =  calendar1.get(Calendar.AM) ;
+ 		Repat r = null;
+ 		if ((heure >= 6) && (heure <= 8) )
+ 		{
+ 			if(jour==2)
+ 			{
+ 				r = tab1[0];
+ 			}
+ 			if(jour==3)
+ 			{
+ 				r = tab1[1];
+ 			}
+ 			if(jour==4)
+ 			{
+ 				r = tab1[2];
+ 			}
+ 			if(jour==5)
+ 			{
+ 				r = tab1[3];
+ 			}
+ 			if(jour==6)
+ 			{
+ 				r = tab1[4];
+ 			}
+ 		}
+ 		if((heure >= 0) && (heure <= 3) )    
+       {
+ 			if(jour==2)
+ 			{
+ 				r = tab[0];
+ 			}
+ 			else if(jour==3)
+ 			{
+ 				r = tab[1];
+ 			}
+ 			else if(jour==4)
+ 			{
+ 				r = tab[2];
+ 			}
+ 			if(jour==5)
+ 			{
+ 				r = tab[3];
+ 			}
+ 			if(jour==6)
+ 			{
+ 				r = tab[4];
+ 			}
+ 			if(jour==7)
+ 			{
+ 				r= tab[5];
+ 			}
+ 			return r;
+       }
+ 		return null;
 	}
 	
 	public String repas_proposer(String url)
