@@ -8,6 +8,7 @@ import traitement.Reclamation;
 import traitement.TraitementEtudiant;
 import traitement.TraitementPersonnel;
 import traitement.TraitementRepat;
+import traitement.TraitementReservation;
 
 public class Admin 
 {
@@ -254,7 +255,6 @@ public class Admin
 		TraitementRepat tr = new TraitementRepat();
 		Scanner sc =new Scanner(System.in);
 		TraitementPersonnel tp = new TraitementPersonnel();
-		boolean test = false; // pour tester les operations
 		boolean loop = true;
 		do
 		{
@@ -444,6 +444,40 @@ public class Admin
 		}while(loop == true);
 	}
 	
+	public static void gestion_reservation()
+	{
+		Scanner sc =new Scanner(System.in);
+		TraitementReservation tr = new TraitementReservation();
+		boolean loop = true;
+		do
+		{
+			System.out.println("_______________________________________________________________");
+			System.out.println("|_________Gestion des reservations____________________________|");
+			System.out.println("1)Consulter les personnels reservés___________________________|");
+			System.out.println("2)Consulter les étudiants reservés____________________________|");
+			System.out.println("3)Vider les reservations des personnels_______________________|");
+			System.out.println("4)Vider les reservations des étudiants________________________|");
+			System.out.println("5)retour");
+			System.out.println("SVP Tapez votre choix");
+			int choix = sc.nextInt();
+			switch(choix)
+			{
+				case 1 : System.out.println("La liste des personnels reservés"); tr.afficherPersonnelReserver();
+				break;
+				
+				case 2 : System.out.println("La liste des etudiants reservés"); tr.afficherEtudiantReserver();
+				break;
+				case 3 : tr.viderPersonnels(); System.out.println("La suppression est effectué");
+				break;
+				case 4 : tr.viderEtudiants(); System.out.println("La suppression est effectué");
+				break;
+				case 5 : loop = false;
+				default : System.out.println("Vous devez choisir un nombre entre 1 et 5");
+				break;
+			}
+		}while(loop == true);
+	}
+	
 	public static void main(String[] args) 
 	{
 		System.out.println("\n *** Bienvenue au restaurant universitaire de Mahdia *** \n ");
@@ -451,14 +485,15 @@ public class Admin
 		boolean loop = true;
 		do
 		{
-			System.out.println("____________________________________");
-			System.out.println("|_____________Menu_________________|");
-			System.out.println("1)Gestion des etudiants____________|");
-			System.out.println("2)Gestion des Personnels___________|");
-			System.out.println("3)Gestion des repas________________|");
-			System.out.println("4)Reclamation______________________|");
-			System.out.println("5)Quitez___________________________|");
-			System.out.println("|__________________________________|");
+			System.out.println("_____________________________________");
+			System.out.println("|_____________Menu__________________|");
+			System.out.println("1)Gestion des etudiants_____________|");
+			System.out.println("2)Gestion des Personnels____________|");
+			System.out.println("3)Gestion des repas_________________|");
+			System.out.println("4)Reclamation_______________________|");
+			System.out.println("5)Gestion des reservations__________|");
+			System.out.println("6)Quitez____________________________|");
+			System.out.println("|___________________________________|");
 			System.out.println("SVP Tapez votre choix");
 			int choix = sc.nextInt();
 			switch(choix)
@@ -472,9 +507,11 @@ public class Admin
 				case 4 : Reclamation r = new Reclamation();
 						 r.afficher();
 				break;
-				case 5 : System.out.println("Tu as quitté le programme"); loop = false;
+				case 5 : gestion_reservation();
 				break;
-				default : System.out.println("Vous devez choisir un nombre entre 1 et 5");
+				case 6 : System.out.println("Vous avez quitté le programme"); loop = false;
+				break;
+				default : System.out.println("Vous devez choisir un nombre entre 1 et 6");
 				break;
 			}
 		}while(loop == true);

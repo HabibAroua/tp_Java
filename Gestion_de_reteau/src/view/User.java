@@ -14,7 +14,6 @@ import traitement.TraitementRepat;
 
 public class User 
 {
-	
 	public static String Chaine()
 	{
 		Scanner sc = new Scanner(System.in);
@@ -33,6 +32,7 @@ public class User
 		Repat r = tr.getRepatMaintenant();
 		Repat repatReserver = new Repat();
 		System.out.println("voici le menu d'aujourd'hui \n " + r.getPlatprincipale() + "|"+ r.getSalade() );
+		System.out.println("Tapez sur Entrée pour continuer");
 		Chaine();
 		System.out.println("Vous êtes Personnel ou etudiant (p/e)");
 		String user_type = Chaine();
@@ -54,7 +54,7 @@ public class User
 				}
 				else
 				{
-					System.out.println("tu veux dessert oui ou non (oui/non) = ");
+					System.out.println("Vous voulez dessert oui ou non (oui/non) = ");
 			        String b="oui";
 			        String a= Chaine();
 			        if(a.equals(b))
@@ -66,7 +66,7 @@ public class User
 			        {
 			        	System.out.println("ok comme tu veux");
 			        }
-			        System.out.println("tu veux pain  repond que oui/non ");
+			        System.out.println("Vous voulez pain  repond que oui/non ");
 			        String s= Chaine();
 			            
 			        if(s.equals(b))
@@ -80,8 +80,9 @@ public class User
 			        	System.out.println("comme tu veux ");
 			        	repatReserver.setPain("Non");
 			        }
-			        
 			        reservation.setCin(cin);
+			        repatReserver.setPlatprincipale(r.getPlatprincipale());
+					repatReserver.setSalade(r.getSalade());
 			        reservation.setRepat(repatReserver);
 			        rt.reserverPersonnel(reservation);
 				}
@@ -208,7 +209,7 @@ public class User
 						 }
 						
 				break;
-				case 5 : System.out.println("Tu as quitté le programme"); loop = false;
+				case 5 : System.out.println("Vous avez quitté le programme"); loop = false;
 				break;
 				default : System.out.println("Vous devez choisir un nombre entre 1 et 4");
 				break;

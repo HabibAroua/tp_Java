@@ -9,7 +9,7 @@ import models.Reservation;
 
 public class TraitementReservation 
 {
-	private static final int capaciteEtudiant = 50; //final c'est à dire contante 
+	private static final int capaciteEtudiant = 50; //final c'est à dire constante 
 	private static final int capacitePersonnel = 20;
 	ArrayList<Reservation> listEtudiant;
 	ArrayList<Reservation> listPersonnel;
@@ -168,5 +168,37 @@ public class TraitementReservation
 			}
 		}
 		return test;
+	}
+	
+	public void afficherEtudiantReserver()
+	{
+		TraitementEtudiant te = new TraitementEtudiant();
+		for(int i = 0; i<listEtudiant.size() ; i++)
+		{
+			System.out.println(te.trouver(listEtudiant.get(i).getCin()));
+		}
+	}
+	
+	public void afficherPersonnelReserver()
+	{
+		TraitementPersonnel pe = new TraitementPersonnel();
+		for(int i = 0; i<listPersonnel.size() ; i++)
+		{
+			System.out.println(pe.trouver(listPersonnel.get(i).getCin()));
+		}
+	}
+	
+	public void viderPersonnels()
+	{
+		listPersonnel.clear();
+		MyFiles f = new MyFiles("C:/projet_java/ReservationPersonnel.txt","");
+		f.ecrire();
+	}
+	
+	public void viderEtudiants()
+	{
+		listEtudiant.clear();
+		MyFiles f = new MyFiles("C:/projet_java/ReservationEtudiant.txt","");
+		f.ecrire();
 	}
 }
